@@ -1,0 +1,16 @@
+/* TEAM */
+Owner: Dieter's Motors
+Business: Independent BMW, Mercedes, Porsche, Mini & Volvo repair
+Location: 2681 Ventura Blvd, Oxnard, CA 93036, USA
+Phone: +1-805-485-1575
+Site: https://dietersmotors.com/
+
+/* SITE */
+Pages: / (English), /es/ (Español)
+Focus: European auto repair & maintenance in Ventura County
+Technology: HTML, CSS, JavaScript
+Hosting: Static site at dietersmotors.com
+
+/* THANKS */
+Thanks to all our customers in Oxnard, Ventura & Camarillo
+for trusting Dieter's Motors with their European cars since 1972.

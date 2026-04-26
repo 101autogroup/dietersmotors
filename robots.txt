@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Block common admin and private paths (adjust as needed)
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://dietersmotors.com/sitemap.xml
