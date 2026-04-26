@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dieter's Motors | Servicio BMW, Mercedes y Porsche en Oxnard, CA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dieter's Motors es un taller europeo de reparación de autos en Oxnard, CA. Especialistas en Mercedes-Benz, BMW, Porsche, Mini y Volvo. Más de 75 años de experiencia combinada, técnicos certificados ASE, servicio de traslado y autos de cortesía." />
+  <link rel="canonical" href="https://dietersmotors.com/es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dieter's Motors | Servicio BMW, Mercedes y Porsche en Oxnard, CA" />
+  <meta property="og:description" content="Reparación independiente de BMW, Mercedes-Benz, Porsche, Mini y Volvo en Oxnard, CA desde 1972. Servicio honesto y de alta calidad con garantías, traslado local y autos de préstamo." />
+  <meta property="og:url" content="https://dietersmotors.com/es/" />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:image" content="https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg" />
+
+  <style>
+    :root {
+      --blue: #004b8d;
+      --blue-dark: #003462;
+      --blue-light: #e6f0fb;
+      --red: #c8102e;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --max-width: 1100px;
+      --radius-lg: 14px;
+      --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header / Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .brand-logo {
+      height: 52px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--blue);
+      transition: width 0.18s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-phone {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.1rem;
+      font-size: 0.85rem;
+    }
+
+    .nav-phone span.label {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.72rem;
+    }
+
+    .nav-phone a {
+      font-weight: 800;
+      color: #111827;
+      font-size: 1rem;
+    }
+
+    .nav-cta {
+      margin-left: 0.75rem;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      background: var(--red);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(200, 16, 46, 0.4);
+      white-space: nowrap;
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .nav-cta:hover {
+      background: #aa0c26;
+      transform: translateY(-1px);
+      box-shadow: 0 13px 26px rgba(200, 16, 46, 0.55);
+    }
+
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-left: 0.75rem;
+      font-size: 0.78rem;
+    }
+
+    .lang-switch a,
+    .lang-switch span.current {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .lang-switch span.current {
+      background: #e5f0ff;
+      border-color: #bfdbfe;
+      color: #003462;
+      font-weight: 600;
+    }
+
+    .lang-switch a {
+      background: #ffffff;
+      border-color: #e5e7eb;
+      color: #4b5563;
+      text-decoration: none;
+    }
+
+    .lang-switch a:hover {
+      border-color: #cbd5e1;
+      background: #f9fafb;
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .nav-toggle span,
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--blue-dark);
+      border-radius: 999px;
+      position: relative;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    .nav-toggle span::before { top: -5px; }
+    .nav-toggle span::after { top: 5px; }
+
+    /* Fullscreen Hero - UPDATED COLOR SCHEME */
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url("https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+      filter: saturate(0.85) brightness(0.65);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        115deg,
+        rgba(15, 23, 42, 0.95) 0%,
+        rgba(15, 23, 42, 0.88) 35%,
+        rgba(15, 23, 42, 0.6) 60%,
+        rgba(15, 23, 42, 0.3) 100%
+      );
+      opacity: 1;
+      z-index: -1;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.75rem 1.25rem 3rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.4rem;
+      color: #cbd5f5;
+      text-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 3vw + 1rem, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.6rem;
+      text-shadow: 0 16px 35px rgba(15, 23, 42, 0.95);
+    }
+
+    .hero-title span { color: #fefce8; }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: #e5e7eb;
+      max-width: 32rem;
+      margin-bottom: 1.1rem;
+      text-shadow: 0 12px 26px rgba(15, 23, 42, 0.95);
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .badge {
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(209,213,219,0.85);
+      font-size: 0.78rem;
+      background: rgba(15,23,42,0.65);
+      color: #e5e7eb;
+      backdrop-filter: blur(2px);
+      text-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
+    }
+
+    .badge strong { color: #fefce8; }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg,#f97316,#fb923c);
+      color: #111827;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 18px 38px rgba(249,115,22,0.65);
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg,#ea580c,#f97316);
+      transform: translateY(-1px);
+      box-shadow: 0 22px 48px rgba(249,115,22,0.75);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(248, 250, 252, 0.9);
+      background: rgba(15,23,42,0.35);
+      font-size: 0.9rem;
+      color: #f9fafb;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.7);
+    }
+
+    .btn-outline:hover {
+      background: rgba(15,23,42,0.55);
+      border-color: #ffffff;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.9);
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: #e5e7eb;
+      text-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);
+    }
+
+    .hero-note strong { color: #ffffff; }
+
+    .hero-side-card {
+      border-radius: var(--radius-lg);
+      background: rgba(15,23,42,0.78);
+      border: 1px solid rgba(209,213,219,0.45);
+      padding: 1rem 1.1rem;
+      font-size: 0.86rem;
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-side-card h2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #f9fafb;
+    }
+
+    .hero-side-card p { color: #e5e7eb; margin-bottom: 0.4rem; }
+
+    .hero-side-card a {
+      color: #bfdbfe;
+      text-decoration: underline;
+      font-size: 0.84rem;
+    }
+
+    /* Sections */
+    section { padding: 2.25rem 1.25rem; }
+
+    .section-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .section-header { margin-bottom: 1.3rem; }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.25rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--blue-dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.2rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 36rem;
+    }
+
+    /* Services layout */
+    .services-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    .services-text p {
+      font-size: 0.92rem;
+      color: var(--text);
+      margin-bottom: 0.7rem;
+    }
+
+    .services-text p + p { color: var(--muted); }
+
+    .service-bullets {
+      background: #f9fafb;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    .service-bullets h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--blue-dark);
+    }
+
+    .service-bullets ul { margin-left: 1.1rem; }
+    .service-bullets li { margin-bottom: 0.25rem; }
+
+    /* Specializations */
+    .specializations {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .specialization-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 0.7rem 0.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      background: #ffffff;
+    }
+
+    .specialization-card strong {
+      display: block;
+      color: var(--blue-dark);
+      margin-bottom: 0.15rem;
+    }
+
+    .specialization-card span {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Articles */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .article-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 0.9rem 1rem;
+      background: #ffffff;
+      font-size: 0.87rem;
+      transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .article-card:hover {
+      box-shadow: var(--shadow-soft);
+      transform: translateY(-2px);
+      border-color: #cbd5e1;
+    }
+
+    .article-card h3 {
+      font-size: 0.98rem;
+      color: var(--blue-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .article-card p {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card a.read-link {
+      font-size: 0.8rem;
+      color: var(--blue);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    /* Reviews */
+    .reviews-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .review-score {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1rem 1.1rem;
+      background: #fefce8;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+    }
+
+    .review-score h3 {
+      font-size: 1rem;
+      color: var(--blue-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .review-score .score {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 0.2rem;
+      color: var(--blue-dark);
+    }
+
+    .review-score .stars {
+      font-size: 1.1rem;
+      color: #f59e0b;
+      margin-bottom: 0.4rem;
+    }
+
+    .review-score p { font-size: 0.84rem; color: var(--muted); }
+
+    .review-list {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .review {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 0.8rem 0.9rem;
+      background: #ffffff;
+      font-size: 0.86rem;
+    }
+
+    .review p { margin-bottom: 0.4rem; color: var(--muted); }
+    .review strong { color: var(--blue-dark); }
+    .review span.source {
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    /* Live Google reviews iframe */
+    .live-reviews-embed {
+      margin-top: 1.25rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #ffffff;
+      height: 420px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .live-reviews-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Location & Hours */
+    .location-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1rem 1.1rem;
+      background: #ffffff;
+      font-size: 0.9rem;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      color: var(--blue-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .card p { margin-bottom: 0.4rem; color: var(--text); }
+
+    .map-link {
+      font-size: 0.86rem;
+      color: var(--blue);
+      font-weight: 500;
+    }
+
+    .hours-list {
+      list-style: none;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .hours-list span.day {
+      font-weight: 500;
+      color: var(--blue-dark);
+    }
+
+    /* Contact strip */
+    .contact-strip {
+      background: var(--blue-dark);
+      color: #ffffff;
+    }
+
+    .contact-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.7rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .contact-inner h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-inner p { color: #e5e7eb; }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.4rem 1.25rem 1.6rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      background: #f9fafb;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .footer-links a { color: var(--blue-dark); }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+
+      body.nav-open .nav-links {
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+        padding: 0.75rem 1.25rem 0.9rem;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .services-layout,
+      .reviews-layout,
+      .location-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .articles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero { min-height: 80vh; }
+      .hero-inner { padding-top: 2.2rem; }
+      .specializations {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .articles-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Dieter's Motors",
+    "url": "https://dietersmotors.com/",
+    "image": "https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg",
+    "telephone": "+1-805-485-1575",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2681 Ventura Blvd",
+      "addressLocality": "Oxnard",
+      "addressRegion": "CA",
+      "postalCode": "93036",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.247,
+      "longitude": -119.184
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": [
+      "https://maps.google.com/?q=2681+Ventura+Blvd+Oxnard+CA+93036"
+    ],
+    "description": "Taller de reparación independiente de BMW, Mercedes-Benz, Porsche, Mini y Volvo en Oxnard, CA. Negocio familiar desde 1972 con técnicos certificados ASE, servicio de traslado y autos de cortesía."
+  }
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header>
+      <div class="nav-inner" id="top">
+        <div class="brand">
+          <!-- Ajusta la ruta src al archivo real del logo en tu servidor -->
+          <img class="brand-logo" src="/images/dieters-logo.png" alt="Logo Dieter's Motors" />
+        </div>
+
+        <nav class="nav-links">
+          <a href="#hero">Inicio</a>
+          <a href="#services">Servicios mecánicos</a>
+          <a href="#articles">Artículos</a>
+          <a href="#reviews">Reseñas</a>
+          <a href="#location">Ubicación y horario</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div class="nav-phone">
+            <span class="label">Llame hoy</span>
+            <a href="tel:18054851575">(805) 485-1575</a>
+          </div>
+          <a class="nav-cta"
+             href="https://dietersmotors.com/schedule-service.html"
+             target="_blank" rel="noopener">
+            Cita en línea
+          </a>
+
+          <div class="lang-switch">
+            <a href="/">🇺🇸 EN</a>
+            <span class="current">🇲🇽 ES</span>
+          </div>
+        </div>
+
+        <button class="nav-toggle" aria-label="Abrir navegación" onclick="document.body.classList.toggle('nav-open');">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero pantalla completa -->
+    <main id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="hero-kicker">
+            Reparación independiente de BMW • Mercedes-Benz • Porsche • Mini • Volvo
+          </div>
+          <h1 class="hero-title">
+            Servicio de Mercedes, BMW y Porsche en <span>Oxnard, CA</span>
+          </h1>
+          <p class="hero-subtitle">
+            Dieter’s Motors es un taller mecánico y centro de servicio completo para BMW,
+            Mercedes y Porsche. Atendemos el área de Ventura County desde 1972 con
+            técnicos certificados ASE y más de 75 años de experiencia combinada.
+          </p>
+
+          <div class="hero-badges">
+            <div class="badge"><strong>Negocio familiar</strong> desde 1972</div>
+            <div class="badge"><strong>Más de 75 años</strong> de experiencia</div>
+            <div class="badge">Servicio de traslado y autos de cortesía</div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn-primary"
+               href="https://dietersmotors.com/schedule-service.html"
+               target="_blank" rel="noopener">
+              Programar servicio en línea
+            </a>
+            <a class="btn-outline" href="tel:18054851575">
+              Llamar (805) 485-1575
+            </a>
+          </div>
+
+          <p class="hero-note">
+            <strong>Ofrecemos servicio y mantenimiento para autos europeos,</strong>
+            especializados en Mercedes, BMW y Porsche. Contamos con traslado local y
+            vehículos de préstamo mientras reparamos su auto.
+          </p>
+        </div>
+
+        <aside class="hero-side-card" aria-label="Información rápida del taller">
+          <h2>Visite Dieter’s Motors</h2>
+          <p>
+            2681 Ventura Blvd<br />
+            Oxnard, CA 93036
+          </p>
+          <p>
+            Teléfono: <a href="tel:18054851575">(805) 485-1575</a><br />
+            Estimados gratis en la mayoría de los vehículos.
+          </p>
+          <p>
+            <a href="https://maps.google.com/?q=2681+Ventura+Blvd+Oxnard+CA+93036" target="_blank" rel="noopener">
+              Ver en Google Maps
+            </a>
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Servicios -->
+    <section id="services">
+      <div class="section-inner">
+          
+                  <header class="section-header">
+          <div class="section-kicker">Servicios mecánicos</div>
+          <h2 class="section-title">
+            Reparación y mantenimiento para BMW, Mercedes, Porsche y más
+          </h2>
+          <p class="section-subtitle">
+            Nuestro taller en Oxnard utiliza la tecnología de diagnóstico más reciente
+            para que su BMW, Mercedes o Porsche vuelva a la carretera de forma segura y
+            rápida.
+          </p>
+        </header>
+
+        <div class="services-layout">
+          <div class="services-text">
+            <p>
+              Estamos ubicados en Oxnard, California y nuestra meta es ofrecer a nuestros
+              clientes un servicio honesto y de calidad en el menor tiempo posible.
+              La empresa es familiar desde 1972 y cuenta con técnicos certificados ASE
+              con amplia experiencia.
+            </p>
+            <p>
+              Nos enorgullece nuestro trabajo, ofrecemos un alto nivel de servicio al
+              cliente y respaldamos las reparaciones con garantías. Dieter’s Motors se
+              compromete a mantener prácticas de negocio éticas y sólidas para superar sus
+              expectativas en la reparación de BMW, Mercedes, Volvo y Mini.
+            </p>
+          </div>
+
+          <div class="service-bullets">
+            <h3>Servicios de reparación y mantenimiento</h3>
+            <ul>
+              <li>Venta de Mercedes pre-usados</li>
+              <li>Reparación y diagnóstico automotriz</li>
+              <li>Mantenimiento recomendado por fábrica</li>
+              <li>Reparación de dirección y suspensión</li>
+              <li>Servicio y reparación de frenos</li>
+              <li>Cambios de aceite y afinación</li>
+              <li>Servicio y reparación de transmisión</li>
+              <li>Reparación y servicio de motor</li>
+              <li>Reparación eléctrica automotriz</li>
+              <li>Servicio y reparación de aire acondicionado</li>
+              <li>Problemas de batería y arranque</li>
+              <li>Taller de reparación automotriz integral</li>
+              <li>Y mucho más</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;">
+          <div class="section-kicker" style="margin-bottom:0.4rem;">Especialistas en</div>
+          <div class="specializations">
+            <div class="specialization-card">
+              <strong>BMW</strong>
+              <span>Servicio y mantenimiento experto</span>
+            </div>
+            <div class="specialization-card">
+              <strong>Mercedes-Benz</strong>
+              <span>Especialistas en servicio y reparación</span>
+            </div>
+            <div class="specialization-card">
+              <strong>Porsche</strong>
+              <span>Mantenimiento y desempeño</span>
+            </div>
+            <div class="specialization-card">
+              <strong>Mini</strong>
+              <span>Servicio y reparación Mini Cooper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artículos / recursos -->
+    <section id="articles">
+      <div class="section-inner">
+        <header class="section-header">
+          <div class="section-kicker">Artículos y recursos</div>
+          <h2 class="section-title">Aprenda más sobre el cuidado de su auto europeo</h2>
+          <p class="section-subtitle">
+            Dieter’s Motors publica páginas de servicio y artículos útiles sobre
+            mantenimiento de BMW, Mercedes y otros autos europeos. Aquí hay algunos de los
+            recursos más importantes (los artículos están en inglés).
+          </p>
+        </header>
+
+        <div class="articles-grid">
+          <article class="article-card">
+            <h3>Servicio Mercedes-Benz en Oxnard</h3>
+            <p>
+              Por qué es importante mantener su Mercedes al día y cómo atendemos
+              modelos C-Class, E-Class, G-Class y S-Class.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/mercedes-benz-service-in-oxnard/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Servicio BMW en Oxnard</h3>
+            <p>
+              Información sobre mantenimiento y reparación de BMW para conductores en
+              Oxnard, Camarillo y Ventura.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/bmw-service-in-oxnard/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Mantenimiento de autos europeos</h3>
+            <p>
+              Por qué seguir los intervalos de servicio recomendados es clave para evitar
+              reparaciones costosas más adelante.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/auto-maintenance/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Servicio de frenos</h3>
+            <p>
+              Señales de desgaste en el sistema de frenos y cómo revisamos, servimos y
+              reemplazamos componentes.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/brake-repair-service/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Diagnóstico automotriz</h3>
+            <p>
+              Cómo el equipo de diagnóstico moderno nos ayuda a encontrar luces de “check
+              engine”, fallas eléctricas y problemas de manejo.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/automotive-diagnostics/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Cambio de aceite</h3>
+            <p>
+              Intervalos recomendados y por qué un cambio de aceite correcto es tan
+              importante para la vida del motor.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/oil-change-service/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Servicio a tiempo para su auto europeo</h3>
+            <p>
+              Cómo el mantenimiento puntual ayuda a proteger el valor, la confiabilidad y
+              la seguridad de su BMW o Mercedes.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/the-importance-of-servicing-your-european-car-on-time/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Cómo elegir y cuidar su auto europeo</h3>
+            <p>
+              Consejos para elegir un auto europeo adecuado y mantenerlo en buen estado
+              a largo plazo.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/how-to-choose-and-maintain-your-european-car/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Interchiller Systems Installations</h3>
+            <p>
+              Cómo los interchillers ayudan a mantener los autos de alto desempeño más
+              frescos y constantes en climas de calor.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/inter-chiller-systems-installations/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Smog &amp; Clean Truck Check</h3>
+            <p>
+              Información sobre nuestro centro de smog y reparaciones en Oxnard, incluyendo
+              inspecciones Clean Truck (HD I/M).
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/smog-and-repair-station-in-oxnard/" target="_blank" rel="noopener">
+              Ver artículo
+            </a>
+          </article>
+
+          <article class="article-card">
+            <h3>Más servicios y artículos</h3>
+            <p>
+              Revise todas nuestras páginas de servicio y artículos técnicos en un solo
+              lugar.
+            </p>
+            <a class="read-link" href="https://dietersmotors.com/services/" target="_blank" rel="noopener">
+              Ver todos los servicios
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="reviews">
+      <div class="section-inner">
+        <header class="section-header">
+          <div class="section-kicker">Reseñas</div>
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+          <p class="section-subtitle">
+            Estas son algunas de las muchas reseñas de 5 estrellas de conductores que
+            confían su auto europeo a Dieter’s Motors.
+          </p>
+        </header>
+
+        <div class="reviews-layout">
+          <aside class="review-score" aria-label="Calificación general">
+            <h3>Calificación 5 estrellas</h3>
+            <div class="score">5.0</div>
+            <div class="stars">★★★★★</div>
+            <p>
+              Calificación perfecta basada en reseñas en línea. Nuestros clientes valoran
+              el trato honesto, la atención al detalle y la alta calidad del trabajo.
+            </p>
+          </aside>
+
+          <div class="review-list">
+            <article class="review">
+              <p>“Siempre es un placer ver a Lothar y Linda. Solo hacen lo que es necesario y no vacían su billetera.”</p>
+              <strong>Gina Greene</strong> · <span class="source">Reseña Google</span>
+            </article>
+
+            <article class="review">
+              <p>“Fui por cambio de aceite, pastillas y discos de freno para mi BMW. El precio fue excelente y el servicio muy bueno. También revisaron y llenaron mis llantas. Recomiendo mucho llevar su BMW aquí.”</p>
+              <strong>Nathan Udomsri</strong> · <span class="source">Reseña Google</span>
+            </article>
+
+            <article class="review">
+              <p>“Después de probar varios talleres con el auto de mi esposa, descansé cuando encontré Dieter’s y lo usé por años; ahora que tengo un Mercedes, vuelvo con ellos.”</p>
+              <strong>Bo Bevis</strong> · <span class="source">Reseña Google</span>
+            </article>
+
+            <article class="review">
+              <p>“He venido a Dieter’s por más de 15 años y son los mejores. Lothar y Linda siempre han sido muy directos y han ido más allá para ofrecer un servicio ejemplar.”</p>
+              <strong>Ken Bolton</strong> · <span class="source">Cliente</span>
+            </article>
+
+            <article class="review">
+              <p>“Servicio excelente y negocio familiar. Honestos, detallistas y expertos en autos alemanes. Gran inventario de partes, entregas rápidas y precios muy razonables.”</p>
+              <strong>H Jasna Haller</strong> · <span class="source">Reseña Google</span>
+            </article>
+
+            <article class="review">
+              <p>“Lothar y Linda son los mejores: profesionales, informativos, precisos y amables. Cuando surge un problema, solo hay un taller al que llamo: ¡Dieter’s Import Motors!”</p>
+              <strong>Joseph Meisinger</strong> · <span class="source">Cliente</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación y horario -->
+    <section id="location">
+      <div class="section-inner">
+        <header class="section-header">
+          <div class="section-kicker">Ubicación y horario</div>
+          <h2 class="section-title">Visite Dieter’s Motors en Oxnard</h2>
+          <p class="section-subtitle">
+            Estamos en Ventura Blvd en Oxnard y atendemos a clientes de todo Ventura
+            County, Camarillo, Ventura y áreas cercanas.
+          </p>
+        </header>
+
+        <div class="location-layout">
+          <div class="card">
+            <h3>Dirección del taller</h3>
+            <p>
+              Dieter’s Motors<br />
+              2681 Ventura Blvd<br />
+              Oxnard, CA 93036
+            </p>
+            <p>
+              Teléfono: <a href="tel:18054851575">(805) 485-1575</a><br />
+              Estimados sin costo en la mayoría de los vehículos.
+            </p>
+            <p>
+              <a class="map-link"
+                 href="https://maps.google.com/?q=2681+Ventura+Blvd+Oxnard+CA+93036"
+                 target="_blank" rel="noopener">
+                Ver en Google Maps
+              </a>
+            </p>
+            <p>
+              Ofrecemos servicio de traslado local y autos de cortesía mientras su vehículo
+              está en el taller.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Horario de atención</h3>
+            <ul class="hours-list">
+              <li><span class="day">Lunes</span><span>8:00 AM – 5:00 PM</span></li>
+              <li><span class="day">Martes</span><span>8:00 AM – 5:00 PM</span></li>
+              <li><span class="day">Miércoles</span><span>8:00 AM – 5:00 PM</span></li>
+              <li><span class="day">Jueves</span><span>8:00 AM – 5:00 PM</span></li>
+              <li><span class="day">Viernes</span><span>8:00 AM – 5:00 PM</span></li>
+              <li><span class="day">Sábado</span><span>Cerrado</span></li>
+              <li><span class="day">Domingo</span><span>Cerrado</span></li>
+            </ul>
+            <p style="margin-top:0.5rem;">
+              Llámenos o programe su próxima cita en línea.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-strip">
+      
+      <iframe src="https://dietersmotors.com/schedule-service.html" width="100%" height="700" frameborder="0"></iframe>
+      
+      <div class="contact-inner">
+        <div>
+          <h2>¿Necesita servicio para su Mercedes, BMW o Porsche?</h2>
+          <p>
+            Llame hoy a Dieter’s Motors para reparación y mantenimiento de autos europeos
+            en Ventura County.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn-primary" href="tel:18054851575">
+            Llamar (805) 485-1575
+          </a>
+          <a class="btn-outline"
+             href="https://dietersmotors.com/schedule-service.html"
+             target="_blank" rel="noopener">
+            Solicitar cotización
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          © <span id="year"></span> Dieter’s Motors | Servicio BMW, Mercedes y Porsche en Oxnard CA.
+          Todos los derechos reservados.
+        </div>
+        <div class="footer-links">
+          <a href="#top">Volver arriba ↑</a>
+          <a href="/">English version</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
