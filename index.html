@@ -506,12 +506,12 @@ function gtag_report_conversion(url) {
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url("https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg");
+      background-image: url("images/shop-hero.jpg");
       background-size: cover;
-      background-position: center;
+      background-position: center 35%;
       background-repeat: no-repeat;
       z-index: -2;
-      filter: saturate(0.8) brightness(0.55) contrast(1.05);
+      filter: saturate(0.95) brightness(0.78) contrast(1.05);
       transform: scale(1.04);
       animation: heroZoom 18s ease-out forwards;
     }
@@ -524,13 +524,20 @@ function gtag_report_conversion(url) {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse at 70% 20%, rgba(200, 16, 46, 0.18) 0%, transparent 55%),
-        linear-gradient(105deg,
-          rgba(11, 18, 32, 0.96) 0%,
-          rgba(11, 18, 32, 0.92) 30%,
-          rgba(11, 18, 32, 0.78) 55%,
-          rgba(11, 18, 32, 0.55) 80%,
-          rgba(11, 18, 32, 0.4) 100%);
+        /* warm red glow upper-right behind the sign */
+        radial-gradient(ellipse at 75% 25%, rgba(200, 16, 46, 0.14) 0%, transparent 50%),
+        /* darker left side so headline + body copy stay readable */
+        linear-gradient(108deg,
+          rgba(11, 18, 32, 0.92) 0%,
+          rgba(11, 18, 32, 0.78) 25%,
+          rgba(11, 18, 32, 0.50) 52%,
+          rgba(11, 18, 32, 0.28) 78%,
+          rgba(11, 18, 32, 0.18) 100%),
+        /* gentle bottom darkening to anchor the buttons */
+        linear-gradient(180deg,
+          transparent 0%,
+          transparent 55%,
+          rgba(11, 18, 32, 0.35) 100%);
       z-index: -1;
     }
 
@@ -889,9 +896,38 @@ function gtag_report_conversion(url) {
 
     /* ---------- SERVICES ---------- */
     #services {
+      position: relative;
+      isolation: isolate;
       background:
         radial-gradient(ellipse at 0% 0%, rgba(200,16,46,0.04) 0%, transparent 40%),
         var(--bone);
+      overflow: hidden;
+    }
+    #services::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("images/shop-interior.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: saturate(0.8) contrast(1.05);
+      opacity: 0.10;
+      z-index: -2;
+      pointer-events: none;
+    }
+    #services::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg,
+          var(--bone) 0%,
+          rgba(246, 242, 234, 0.85) 30%,
+          rgba(246, 242, 234, 0.85) 70%,
+          var(--bone) 100%);
+      z-index: -1;
+      pointer-events: none;
     }
 
     .services-layout {
@@ -1376,22 +1412,37 @@ function gtag_report_conversion(url) {
     /* ---------- CONTACT STRIP ---------- */
     .contact-strip {
       position: relative;
-      background:
-        radial-gradient(ellipse at 80% 50%, rgba(200,16,46,0.18) 0%, transparent 55%),
-        var(--ink);
+      background: var(--ink);
       color: #fff;
       overflow: hidden;
       padding: 4.5rem 1.5rem;
+      isolation: isolate;
     }
+    /* Real storefront photo as backdrop */
+    .contact-strip::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("images/shop-front.jpg");
+      background-size: cover;
+      background-position: center 60%;
+      filter: saturate(0.85) brightness(0.55) contrast(1.05);
+      z-index: -2;
+      transform: scale(1.02);
+    }
+    /* Layered gradient overlay for readability + brand wash */
     .contact-strip::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-image:
-        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-      mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
-      -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(200,16,46,0.30) 0%, transparent 55%),
+        linear-gradient(100deg,
+          rgba(11, 18, 32, 0.88) 0%,
+          rgba(11, 18, 32, 0.72) 40%,
+          rgba(11, 18, 32, 0.45) 75%,
+          rgba(11, 18, 32, 0.55) 100%);
+      z-index: -1;
       pointer-events: none;
     }
 
@@ -1536,6 +1587,11 @@ function gtag_report_conversion(url) {
     /* Phone */
     @media (max-width: 640px) {
       :root { --r-lg: 16px; }
+
+      /* lighter hero image on phones to save data */
+      .hero-bg {
+        background-image: url("/images/shop-hero-mobile.jpg");
+      }
 
       .hero-inner { padding: 2.25rem 1.1rem 3rem; }
       .hero-kicker {
