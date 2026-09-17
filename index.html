@@ -22,7 +22,7 @@
 <!-- ID Pixel analytics -->
 <script src="https://cdn.idpixel.app/v1/idp-analytics-6a9c9f004525f8fe67d77569.min.js" defer></script>
 <title>Auto, Truck &amp; RV Repair in Oxnard | BMW, Mercedes &amp; All Makes | Smog &amp; Clean Truck Check | Dieter's Motors</title>
-<meta name="description" content="Dieter's Motors is a family-owned repair shop in Oxnard, CA. German car specialists for Mercedes-Benz, BMW &amp; Porsche — plus honest repair for all cars, trucks, fleet vehicles and RVs, smog tests and Clean Truck Check inspections. Family-owned since 1972, ASE-certified technicians, shuttle &amp; loaner vehicles, smog &amp; Clean Truck Check.">
+<meta name="description" content="Family-owned auto, truck &amp; RV repair in Oxnard, CA since 1972. All makes and models — ASE-certified techs, free estimates, loaners &amp; shuttle. Smog check $59. CARB Clean Truck Check $99. European specialists for Mercedes-Benz, BMW &amp; Porsche too. Call (805) 485-1575.">
 <meta name="keywords" content="auto mechanic Oxnard, auto repair Ventura County, auto mechanic Camarillo, BMW repair Oxnard, Mercedes-Benz repair Oxnard, Porsche mechanic Oxnard, European auto repair, all makes auto repair Oxnard, brake repair Oxnard, oil change Oxnard, smog test Oxnard, HD diesel smog, Clean Truck Check Ventura County, ASE certified mechanic, check engine light, transmission repair, AC repair">
 <meta name="author" content="Dieter's Motors">
 <meta name="robots" content="index, follow">
@@ -33,7 +33,7 @@
 <link rel="canonical" href="https://dietersmotors.com/">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Dieter's Motors | Auto, Truck, Fleet &amp; RV Repair in Oxnard, CA">
-<meta property="og:description" content="Ventura County's trusted mechanic for BMW, Mercedes, Porsche and all makes — cars, trucks, fleets and RVs, plus smog tests and Clean Truck Check. Family-owned in Oxnard since 1972.">
+<meta property="og:description" content="Ventura County's trusted mechanic for every make and model — cars, trucks, fleets and RVs. Smog check $59, CARB Clean Truck Check $99. European specialists too. Family-owned in Oxnard since 1972.">
 <meta property="og:url" content="https://dietersmotors.com/">
 <meta property="og:image" content="https://dietersmotors.com/images/dieters-mascot.jpg">
 
@@ -139,8 +139,8 @@
   .menu a:hover::after{right:0}
   .navtoggle{display:none; background:none; border:1.5px solid var(--hair); border-radius:5px; padding:8px 11px; font-family:"JetBrains Mono",monospace; font-size:12px; letter-spacing:.12em; cursor:pointer}
   @media(max-width:960px){
-    .menu{position:fixed; inset:110px 0 auto 0; flex-direction:column; align-items:flex-start; background:var(--bone); padding:24px 26px 30px; gap:20px; border-bottom:1px solid var(--hair); transform:translateY(-130%); transition:transform .3s ease, opacity .2s, visibility .2s; opacity:0; visibility:hidden; pointer-events:none}
-    .menu.open{transform:translateY(0); opacity:1; visibility:visible; pointer-events:auto}
+    .menu{position:fixed; inset:110px 0 auto 0; flex-direction:column; align-items:flex-start; background:var(--bone); padding:24px 26px 30px; gap:20px; border-bottom:1px solid var(--hair); transform:translateY(-130%); transition:none; opacity:0; visibility:hidden; pointer-events:none}
+    .menu.open{transform:translateY(0); opacity:1; visibility:visible; pointer-events:auto; transition:transform .3s ease, opacity .2s}
     .menu a{font-size:20px; font-family:"Bricolage Grotesque"; font-weight:600}
     .navtoggle{display:inline-flex}
     .nav .hdr-cta{display:none}
@@ -173,9 +173,70 @@
   .sticker{position:absolute; left:14px; bottom:14px; background:var(--ink); color:#fff; border-radius:6px; padding:9px 13px; font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase}
   .sticker b{color:var(--cognac); display:block; font-weight:500}
   @media(max-width:880px){
-    .hero .wrap{grid-template-columns:1fr; gap:36px}
-    .hero-media{order:-1; max-width:520px}
+    .hero{padding:18px 0 22px}
+    .hero .wrap{grid-template-columns:1fr; gap:28px}
+    .hero-media{order:2; max-width:520px}
     .hero-media .block,.hero-media .grid-tex{left:24px; right:-10px; top:18px; bottom:18px}
+    .hero h1{font-size:clamp(32px,8.2vw,52px)}
+    .hero p.lead{font-size:16.5px; line-height:1.48; margin:14px 0 18px}
+    .hero .slug{display:none}
+    .trust{margin:0 0 16px; gap:6px 10px}
+  }
+  @media(max-width:520px){
+    .hero-media .frame img{aspect-ratio:16/9}
+  }
+
+  /* ---------- conversion CTA block ---------- */
+  .trust{display:flex; flex-wrap:wrap; align-items:center; gap:7px 12px; margin:0 0 20px;
+    font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--muted); line-height:1.3}
+  .trust b{color:var(--ink); font-weight:700}
+  .trust .dot{width:4px; height:4px; border-radius:50%; background:var(--cognac); flex:0 0 auto}
+  .trust .stars{color:var(--cognac); letter-spacing:.04em}
+
+  .cta-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:0 0 12px; max-width:620px}
+  .cta{display:flex; flex-direction:column; justify-content:center; gap:5px; min-height:90px;
+    padding:15px 17px; border-radius:8px; border:1.5px solid var(--hair); background:var(--bone-2);
+    transition:transform .12s ease, border-color .15s, background .15s, box-shadow .15s}
+  .cta:hover{transform:translateY(-2px); border-color:var(--ink); box-shadow:0 10px 26px rgba(21,23,28,.10)}
+  .cta .t{font-family:"Bricolage Grotesque","Hanken Grotesk",sans-serif; font-weight:700;
+    font-size:17px; line-height:1.12; letter-spacing:-.012em}
+  .cta .s{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); line-height:1.4}
+  .cta.primary{background:var(--cobalt); border-color:var(--cobalt); color:#fff}
+  .cta.primary:hover{background:var(--cobalt-d); border-color:var(--cobalt-d)}
+  .cta.primary .s{color:rgba(255,255,255,.85)}
+  .cta.fleet{background:var(--cognac); border-color:var(--cognac); color:#fff}
+  .cta.fleet:hover{background:var(--cognac-d); border-color:var(--cognac-d)}
+  .cta.fleet .s{color:rgba(255,255,255,.88)}
+
+  .cta-call{display:flex; align-items:center; justify-content:center; gap:10px; max-width:620px;
+    padding:17px 20px; border-radius:8px; background:var(--ink); color:#fff;
+    font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:19px;
+    letter-spacing:-.012em; transition:background .15s, transform .12s ease}
+  .cta-call:hover{background:#000; transform:translateY(-2px)}
+  .cta-note{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.07em;
+    text-transform:uppercase; color:var(--muted); margin:12px 0 0; line-height:1.6}
+
+  @media(max-width:420px){
+    .cta{min-height:82px; padding:13px 14px}
+    .cta .t{font-size:15.5px}
+    .cta .s{font-size:9.5px; letter-spacing:.03em}
+    .cta-call{font-size:17.5px; padding:16px}
+  }
+
+  /* sticky mobile action bar */
+  .stickybar{display:none}
+  @media(max-width:880px){
+    .stickybar{display:grid; grid-template-columns:1.05fr .95fr; gap:8px; position:fixed;
+      left:0; right:0; bottom:0; z-index:300;
+      padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+      background:rgba(236,232,223,.96); backdrop-filter:blur(10px); border-top:1px solid var(--hair)}
+    .stickybar a{display:flex; align-items:center; justify-content:center; gap:7px; padding:13px 8px;
+      border-radius:7px; font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:15px}
+    .sb-call{background:var(--ink); color:#fff}
+    .sb-book{background:var(--cobalt); color:#fff}
+    body{padding-bottom:76px}
   }
 
   /* ---------- marquee ---------- */
@@ -321,22 +382,39 @@
 </header>
 
 <!-- HERO -->
-<section class="hero reveal" id="hero">
+<section class="hero in" id="hero">
   <div class="wrap">
     <div>
-      <div class="kick mono">Family-owned in Oxnard since 1972</div>
-      <h1>Ventura County's <span class="mk">big-dog</span><br><span class="l2">shop for German cars.</span></h1>
-      <p class="lead">Mercedes-Benz, BMW &amp; Porsche specialists — and trusted, honest repair for all makes. The same family, the same bay, the same straight answers for over 50 years.</p>
+      <div class="trust">
+        <span><b>Family-owned in Oxnard since 1972</b></span><span class="dot"></span>
+        <span>ASE Certified Techs</span><span class="dot"></span>
+        <span><span class="stars">★★★★★</span> 5.0 Google</span><span class="dot"></span>
+        <span>Free Estimates</span>
+      </div>
+      <h1>Ventura County's <span class="mk">big-dog</span><br><span class="l2">auto &amp; truck shop.</span></h1>
+      <p class="lead">Every make and model — cars, trucks, diesel and RVs. Dealer-level diagnostics, honest pricing, family-owned since 1972.</p>
       <div class="slug">Precision. Performance. <i>Personal Service.</i></div>
-      <div class="ctas">
-        <a class="btn btn-cobalt" href="https://dietersmotors.com/schedule-service.html">Book service online <span class="arr">→</span></a>
-        <a class="btn btn-line" href="tel:18054851575">Call (805) 485-1575</a>
+
+      <div class="cta-grid">
+        <a class="cta primary" data-cta="book_service" href="https://dietersmotors.com/schedule-service.html">
+          <span class="t">Book Service Now</span>
+          <span class="s">Any make · free estimate</span>
+        </a>
+        <a class="cta" data-cta="book_smog" href="https://dietersmotors.com/schedule-service.html">
+          <span class="t">Book Smog Check</span>
+          <span class="s">$59 · cars, vans &amp; light trucks</span>
+        </a>
+        <a class="cta" data-cta="book_clean_truck_check" href="https://dietersmotors.com/schedule-service.html">
+          <span class="t">Book Clean Truck Check</span>
+          <span class="s">$99 · official CARB HD I/M station</span>
+        </a>
+        <a class="cta fleet" data-cta="fleet_call_joel" href="tel:18054851575">
+          <span class="t">Fleet Truck Rates</span>
+          <span class="s">Call &amp; ask for Joel</span>
+        </a>
       </div>
-      <div class="creds">
-        <div class="c"><b>1972</b><span class="mono">Family-owned</span></div>
-        <div class="c"><b>50+ yrs</b><span class="mono">Serving Oxnard</span></div>
-        <div class="c"><b>ASE</b><span class="mono">Certified techs</span></div>
-      </div>
+      <a class="cta-call" data-cta="call_hero" href="tel:18054851575">Call Now · (805) 485-1575</a>
+      <p class="cta-note">Mon–Fri 8am–5pm · 2681 Ventura Blvd, Oxnard · Loaners &amp; shuttle available</p>
     </div>
     <div class="hero-media">
       <div class="block" aria-hidden="true"></div>
@@ -352,8 +430,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="track">
-    <span><em>Mercedes-Benz</em></span><span class="sep">◆</span><span><em>BMW</em></span><span class="sep">◆</span><span><em>Porsche</em></span><span class="sep">◆</span><span>Mini</span><span class="sep">◆</span><span>Volvo</span><span class="sep">◆</span><span>All Makes Welcome</span><span class="sep">◆</span>
-    <span><em>Mercedes-Benz</em></span><span class="sep">◆</span><span><em>BMW</em></span><span class="sep">◆</span><span><em>Porsche</em></span><span class="sep">◆</span><span>Mini</span><span class="sep">◆</span><span>Volvo</span><span class="sep">◆</span><span>All Makes Welcome</span><span class="sep">◆</span>
+    <span><em>All Makes &amp; Models</em></span><span class="sep">◆</span><span>Cars</span><span class="sep">◆</span><span>Trucks</span><span class="sep">◆</span><span>Diesel</span><span class="sep">◆</span><span>Fleets</span><span class="sep">◆</span><span>RVs</span><span class="sep">◆</span><span>Smog &amp; Clean Truck Check</span><span class="sep">◆</span><span>Mercedes-Benz</span><span class="sep">◆</span><span>BMW</span><span class="sep">◆</span><span>Porsche</span><span class="sep">◆</span>
+    <span><em>All Makes &amp; Models</em></span><span class="sep">◆</span><span>Cars</span><span class="sep">◆</span><span>Trucks</span><span class="sep">◆</span><span>Diesel</span><span class="sep">◆</span><span>Fleets</span><span class="sep">◆</span><span>RVs</span><span class="sep">◆</span><span>Smog &amp; Clean Truck Check</span><span class="sep">◆</span><span>Mercedes-Benz</span><span class="sep">◆</span><span>BMW</span><span class="sep">◆</span><span>Porsche</span><span class="sep">◆</span>
   </div>
 </div>
 
@@ -365,7 +443,7 @@
         <div class="tag mono">01 <b>— Mechanical Services</b></div>
         <h2 class="h-lg">Dealer-level work, <span class="mk cognac">without</span> the dealer attitude</h2>
       </div>
-      <p class="lead-sub">Factory-level diagnostics, ASE-certified technicians, and repairs backed by warranty. We sweat the German cars — and we'll take great care of your truck, SUV or daily driver too.</p>
+      <p class="lead-sub">Factory-level diagnostics, ASE-certified technicians, and repairs backed by warranty — on cars, trucks, SUVs, diesel and RVs of every make. We're also the shop European owners have trusted for 50 years, so if we can sort a Porsche, your daily driver is in good hands.</p>
     </div>
 
     <div class="bento">
@@ -409,7 +487,10 @@
       <p>We're a smog and repair station in Oxnard handling regular smog checks and California HD I/M Clean Truck Check inspections for medium- and heavy-duty diesel trucks. Landscapers, plumbers, contractors and delivery fleets — get inspected and back on the road fast.</p>
     </div>
     <div class="acts">
-      <a class="btn btn-paper" href="https://dietersmotors.com/smog-and-repair-station-in-oxnard/">Smog &amp; Repair Station <span class="arr">→</span></a>
+      <a class="btn btn-paper" data-cta="book_smog_section" href="https://dietersmotors.com/schedule-service.html">Book smog check — $59 <span class="arr">→</span></a>
+      <a class="btn btn-paper" data-cta="book_ctc_section" href="https://dietersmotors.com/schedule-service.html">Book Clean Truck Check — $99 <span class="arr">→</span></a>
+      <a class="btn btn-line-w" data-cta="fleet_call_joel_section" href="tel:18054851575">Fleet rates — call &amp; ask for Joel</a>
+      <a class="btn btn-line-w" href="https://dietersmotors.com/smog-and-repair-station-in-oxnard/">Smog &amp; Repair Station</a>
       <a class="btn btn-line-w" href="https://dietersmotors.com/smog-and-clean-truck-check.html">Clean Truck Check info</a>
       <a class="btn btn-line-w" href="https://dietersmotors.com/fleet-truck-repair-in-oxnard.html">Fleet truck repair &amp; rates</a>
       <a class="btn btn-line-w" href="https://dietersmotors.com/rv-repair-in-oxnard.html">RV mechanical repair</a>
@@ -598,7 +679,25 @@
   </div>
 </footer>
 
+<!-- STICKY MOBILE ACTION BAR -->
+<div class="stickybar">
+  <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Call Now</a>
+  <a class="sb-book" data-cta="book_sticky" href="https://dietersmotors.com/schedule-service.html">Book Service</a>
+</div>
+
 <script>
+  /* CTA conversion tracking -> GA4 */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-cta]') : null;
+    if(!a) return;
+    var id = a.getAttribute('data-cta');
+    if(typeof gtag === 'function'){
+      gtag('event', id.indexOf('call') > -1 ? 'cta_call' : 'cta_book', {
+        cta_id: id, cta_location: 'home'
+      });
+    }
+  }, true);
+
   var t=document.getElementById('navtoggle'), m=document.getElementById('menu');
   t.addEventListener('click',function(){var o=m.classList.toggle('open'); t.setAttribute('aria-expanded',o);});
   m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open'); t.setAttribute('aria-expanded',false);});});
