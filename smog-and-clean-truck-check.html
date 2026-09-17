@@ -56,6 +56,43 @@ function gtag_report_conversion(url) {
     footer { text-align:center; padding:2rem 1rem; color:#64748b; font-size:0.85rem; }
     a { color:#0f172a; text-decoration:underline; }
     @media(max-width:600px){ .container{padding:1.4rem;} nav{gap:1rem;} }
+
+    /* ---------- conversion CTA block ---------- */
+    .cta-wrap { max-width:900px; margin:1.25rem auto 0; padding:0 1.5rem; }
+    .cta-trust { display:flex; flex-wrap:wrap; gap:.35rem .8rem; align-items:center; font-size:.72rem;
+      letter-spacing:.08em; text-transform:uppercase; color:#64748b; margin:0 0 .9rem; line-height:1.4; }
+    .cta-trust b { color:#0f172a; }
+    .cta-grid { display:grid; grid-template-columns:1fr 1fr; gap:.7rem; }
+    .cta { display:flex; flex-direction:column; justify-content:center; gap:.25rem; min-height:86px;
+      padding:.85rem 1rem; border-radius:10px; border:1.5px solid #e2e8f0; background:#fff;
+      text-decoration:none; color:#0f172a; box-shadow:0 2px 8px rgba(15,23,42,.05);
+      transition:transform .12s ease, box-shadow .15s, border-color .15s; }
+    .cta:hover { transform:translateY(-2px); box-shadow:0 10px 22px rgba(15,23,42,.12); border-color:#0f172a; }
+    .cta .t { font-weight:700; font-size:1.02rem; line-height:1.2; }
+    .cta .s { font-size:.7rem; letter-spacing:.05em; text-transform:uppercase; color:#64748b; line-height:1.4; }
+    .cta.primary { background:#1d4ed8; border-color:#1d4ed8; color:#fff; }
+    .cta.primary .s { color:rgba(255,255,255,.85); }
+    .cta.fleet { background:#a85a28; border-color:#a85a28; color:#fff; }
+    .cta.fleet .s { color:rgba(255,255,255,.88); }
+    .cta-call { display:flex; align-items:center; justify-content:center; margin-top:.7rem; padding:1rem;
+      border-radius:10px; background:#0f172a; color:#fff; font-weight:700; font-size:1.12rem; text-decoration:none; }
+    .cta-note { font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:#64748b; margin:.7rem 0 0; }
+    .stickybar { display:none; }
+    @media(max-width:880px){
+      .stickybar { display:grid; grid-template-columns:1.05fr .95fr; gap:.5rem; position:fixed;
+        left:0; right:0; bottom:0; z-index:300;
+        padding:.55rem .75rem calc(.55rem + env(safe-area-inset-bottom));
+        background:rgba(248,250,252,.97); border-top:1px solid #e2e8f0; }
+      .stickybar a { display:flex; align-items:center; justify-content:center; padding:.8rem .5rem;
+        border-radius:8px; font-weight:700; font-size:.95rem; text-decoration:none; }
+      .sb-call { background:#0f172a; color:#fff; }
+      .sb-book { background:#1d4ed8; color:#fff; }
+      body { padding-bottom:74px; }
+      .cta-wrap { padding:0 1rem; }
+      .cta .t { font-size:.95rem; }
+      header h1 { font-size:1.32rem; }
+    }
+    @media(max-width:420px){ .cta { min-height:80px; padding:.75rem .8rem; } .cta .s { font-size:.64rem; } }
   </style>
   
   <!-- Google tag (gtag.js) -->
@@ -82,6 +119,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </nav>
   <h1>CARB Clean Truck Check in Oxnard &mdash; Official HD I/M Test Station</h1>
 </header>
+
+<section class="cta-wrap">
+  <div class="cta-trust">
+    <span><b>Official CARB HD I/M Test Station</b></span><span>&middot;</span>
+    <span>Certified Technician On Site</span><span>&middot;</span>
+    <span>Test &amp; Repair Under One Roof</span>
+  </div>
+  <div class="cta-grid">
+    <a class="cta primary" data-cta="book_clean_truck_check" href="/schedule-service.html">
+      <span class="t">Book Clean Truck Check</span>
+      <span class="s">$99 &middot; CARB HD I/M test</span>
+    </a>
+    <a class="cta" data-cta="book_smog" href="/schedule-service.html">
+      <span class="t">Book Smog Check</span>
+      <span class="s">$59 &middot; cars, vans &amp; light trucks</span>
+    </a>
+    <a class="cta" data-cta="book_service" href="/schedule-service.html">
+      <span class="t">Book Truck Repair</span>
+      <span class="s">Failed? We diagnose &amp; repair here</span>
+    </a>
+    <a class="cta fleet" data-cta="fleet_call_joel" href="tel:18054851575">
+      <span class="t">Fleet Truck Rates</span>
+      <span class="s">Call &amp; ask for Joel</span>
+    </a>
+  </div>
+  <a class="cta-call" data-cta="call_hero" href="tel:18054851575">Call Now &middot; (805) 485-1575</a>
+  <p class="cta-note">Mon&ndash;Fri 8am&ndash;5pm &middot; 2681 Ventura Blvd, Oxnard &middot; Testing at our shop only</p>
+</section>
 
 <div class="container">
   <p>
@@ -152,6 +217,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
   &copy; <span id="year"></span> Dieter&rsquo;s Motors &mdash; Official CARB Clean Truck Check (HD I/M) Test Station in Oxnard, CA.
 </footer>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<div class="stickybar">
+  <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Call Now</a>
+  <a class="sb-book" data-cta="book_sticky" href="/schedule-service.html">Book Now</a>
+</div>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-cta]') : null;
+    if(!a) return;
+    var id = a.getAttribute('data-cta');
+    if(typeof gtag === 'function'){
+      gtag('event', id.indexOf('call') > -1 ? 'cta_call' : 'cta_book', {
+        cta_id: id, cta_location: 'clean_truck_check'
+      });
+    }
+  }, true);
+</script>
 </body>
 </html>
