@@ -18,17 +18,17 @@
     'phone_conversion_number': '8054851575'
   });
 </script>
-  <title>Dieter's Motors | Servicio BMW, Mercedes y Porsche en Oxnard, CA</title>
+  <title>Taller de Autos y Camiones en Oxnard, CA | Todas las Marcas, Smog y Clean Truck Check | Dieter's Motors</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Dieter's Motors es un taller europeo de reparación de autos en Oxnard, CA. Especialistas en Mercedes-Benz, BMW, Porsche, Mini y Volvo. Más de 75 años de experiencia combinada, técnicos certificados ASE, servicio de traslado y autos de cortesía." />
+  <meta name="description" content="Taller mecánico familiar en Oxnard, CA desde 1972. Todas las marcas y modelos: autos, camiones, diésel y RVs. Técnicos certificados ASE, presupuestos gratis, traslado y autos de cortesía. Prueba de smog $59. Clean Truck Check $99. También especialistas en Mercedes-Benz, BMW y Porsche. Llame (805) 485-1575." />
   <link rel="canonical" href="https://dietersmotors.com/es/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Dieter's Motors | Servicio BMW, Mercedes y Porsche en Oxnard, CA" />
-  <meta property="og:description" content="Reparación independiente de BMW, Mercedes-Benz, Porsche, Mini y Volvo en Oxnard, CA desde 1972. Servicio honesto y de alta calidad con garantías, traslado local y autos de préstamo." />
+  <meta property="og:title" content="Dieter's Motors | Taller de Autos y Camiones en Oxnard, CA" />
+  <meta property="og:description" content="Taller mecánico en Oxnard, CA desde 1972. Todas las marcas y modelos: autos, camiones, diésel y RVs. Prueba de smog $59, Clean Truck Check $99. Servicio honesto con garantías, traslado local y autos de préstamo." />
   <meta property="og:url" content="https://dietersmotors.com/es/" />
   <meta property="og:type" content="business.business" />
-  <meta property="og:image" content="https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg" />
+  <meta property="og:image" content="https://www.dietersmotors.com/images/shop-front.jpg" />
 
   <style>
     :root {
@@ -245,7 +245,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url("https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg");
+      background-image: url("https://www.dietersmotors.com/images/shop-front.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -767,6 +767,83 @@
         grid-template-columns: minmax(0, 1fr);
       }
     }
+
+    /* ---------- bloque de conversión ---------- */
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      max-width: 620px;
+      margin: 1rem 0 0.75rem;
+    }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.2rem;
+      min-height: 84px;
+      padding: 0.8rem 0.95rem;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(15,23,42,0.74);
+      backdrop-filter: blur(3px);
+      color: #ffffff;
+      transition: transform 0.12s ease, background 0.15s, border-color 0.15s;
+    }
+    .cta:hover { transform: translateY(-2px); background: rgba(15,23,42,0.92); border-color: #ffffff; }
+    .cta .t { font-weight: 700; font-size: 1rem; line-height: 1.2; }
+    .cta .s { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: #cbd5e1; line-height: 1.4; }
+    .cta.primary { background: #1d4ed8; border-color: #1d4ed8; }
+    .cta.primary .s { color: rgba(255,255,255,0.88); }
+    .cta.fleet { background: #a85a28; border-color: #a85a28; }
+    .cta.fleet .s { color: rgba(255,255,255,0.9); }
+    .cta-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 620px;
+      padding: 0.95rem 1rem;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: transform 0.12s ease;
+    }
+    .cta-call:hover { transform: translateY(-2px); }
+    .stickybar { display: none; }
+    @media (max-width: 900px) {
+      .stickybar {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 0.5rem;
+        position: fixed;
+        left: 10px; right: 10px; bottom: 10px;
+        z-index: 300;
+      }
+      .stickybar a {
+        display: flex; align-items: center; justify-content: center;
+        padding: 0.85rem 0.5rem; border-radius: 10px;
+        font-weight: 800; font-size: 0.95rem; text-decoration: none; color: #fff;
+        box-shadow: 0 12px 28px rgba(15,23,42,0.35);
+      }
+      .sb-call { background: #0f172a; }
+      .sb-book { background: #1d4ed8; box-shadow: 0 12px 28px rgba(29,78,216,0.4); }
+      body { padding-bottom: 82px; }
+      .cta .t { font-size: 0.95rem; }
+      .cta { min-height: 80px; padding: 0.7rem 0.8rem; }
+      .cta .s { font-size: 0.64rem; }
+      .hero { min-height: 0; }
+      .hero-inner { padding-top: 1.35rem; padding-bottom: 1.35rem; }
+      .hero-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.82) 55%, rgba(15,23,42,0.76) 100%); }
+      /* prioriza la conversión en móvil */
+      .hero-badges { display: none; }
+      .hero-note { display: none; }
+      .nav-phone { display: none; }
+      .cta-grid { margin-top: 0.85rem; }
+    }
   </style>
 
   <!-- LocalBusiness Schema -->
@@ -776,7 +853,7 @@
     "@type": "AutoRepair",
     "name": "Dieter's Motors",
     "url": "https://dietersmotors.com/",
-    "image": "https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg",
+    "image": "https://www.dietersmotors.com/images/shop-front.jpg",
     "telephone": "+1-805-485-1575",
     "priceRange": "$$",
     "address": {
@@ -863,15 +940,15 @@
       <div class="hero-inner">
         <div>
           <div class="hero-kicker">
-            Reparación independiente de BMW • Mercedes-Benz • Porsche • Mini • Volvo
+            Todas las marcas y modelos • Autos • Camiones • Diésel • RVs
           </div>
           <h1 class="hero-title">
-            Servicio de Mercedes, BMW y Porsche en <span>Oxnard, CA</span>
+            Taller de autos y camiones en <span>Oxnard, CA</span>
           </h1>
           <p class="hero-subtitle">
-            Dieter’s Motors es un taller mecánico y centro de servicio completo para BMW,
-            Mercedes y Porsche. Atendemos el área de Ventura County desde 1972 con
-            técnicos certificados ASE y más de 75 años de experiencia combinada.
+            Taller familiar en Oxnard desde 1972. Atendemos todas las marcas y modelos
+            &mdash; autos, camiones, diésel y RVs &mdash; con técnicos certificados ASE
+            y presupuestos gratis.
           </p>
 
           <div class="hero-badges">
@@ -880,20 +957,30 @@
             <div class="badge">Servicio de traslado y autos de cortesía</div>
           </div>
 
-          <div class="hero-actions">
-            <a class="btn-primary"
-               href="https://dietersmotors.com/schedule-service.html"
-               target="_blank" rel="noopener">
-              Programar servicio en línea
+          <div class="cta-grid">
+            <a class="cta primary" data-cta="book_service" href="https://dietersmotors.com/schedule-service.html">
+              <span class="t">Reservar Servicio</span>
+              <span class="s">Cualquier marca &middot; presupuesto gratis</span>
             </a>
-            <a class="btn-outline" href="tel:18054851575">
-              Llamar (805) 485-1575
+            <a class="cta" data-cta="book_smog" href="https://dietersmotors.com/schedule-service.html">
+              <span class="t">Reservar Prueba de Smog</span>
+              <span class="s">$59 &middot; autos, vans y camionetas</span>
+            </a>
+            <a class="cta" data-cta="book_clean_truck_check" href="https://dietersmotors.com/schedule-service.html">
+              <span class="t">Reservar Clean Truck Check</span>
+              <span class="s">$99 &middot; estación oficial CARB HD I/M</span>
+            </a>
+            <a class="cta fleet" data-cta="fleet_call_joel" href="tel:18054851575">
+              <span class="t">Tarifas para Flotas</span>
+              <span class="s">Llame y pregunte por Joel</span>
             </a>
           </div>
 
+          <a class="cta-call" data-cta="call_hero" href="tel:18054851575">Llamar Ahora &middot; (805) 485-1575</a>
+
           <p class="hero-note">
-            <strong>Ofrecemos servicio y mantenimiento para autos europeos,</strong>
-            especializados en Mercedes, BMW y Porsche. Contamos con traslado local y
+            <strong>Atendemos todas las marcas y modelos.</strong> También somos
+            especialistas en Mercedes-Benz, BMW y Porsche. Contamos con traslado local y
             vehículos de préstamo mientras reparamos su auto.
           </p>
         </div>
@@ -1286,8 +1373,24 @@
     </footer>
   </div>
 
+  <div class="stickybar" aria-label="Botones de llamada y reserva">
+    <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Llamar Ahora</a>
+    <a class="sb-book" data-cta="book_sticky" href="https://dietersmotors.com/schedule-service.html">Reservar</a>
+  </div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener('click', function(e){
+      var a = e.target.closest ? e.target.closest('[data-cta]') : null;
+      if(!a) return;
+      var id = a.getAttribute('data-cta');
+      if(typeof gtag === 'function'){
+        gtag('event', id.indexOf('call') > -1 ? 'cta_call' : 'cta_book', {
+          cta_id: id, cta_location: 'home_es'
+        });
+      }
+    }, true);
   </script>
 </body>
 </html>
