@@ -147,6 +147,51 @@
   footer.site a:hover{color:#fff}
   @media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr;gap:34px}.menu{display:none}}
   @media(max-width:620px){.bento{grid-template-columns:1fr}.sec{padding:52px 0}}
+  /* ---------- conversion CTA block ---------- */
+  .cta-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:0 0 12px; max-width:620px}
+  .cta{display:flex; flex-direction:column; justify-content:center; gap:5px; min-height:90px;
+    padding:15px 17px; border-radius:8px; border:1.5px solid var(--hair); background:var(--bone-2);
+    color:var(--ink); transition:transform .12s ease, border-color .15s, background .15s, box-shadow .15s}
+  .cta:hover{transform:translateY(-2px); border-color:var(--ink); box-shadow:0 10px 26px rgba(21,23,28,.10)}
+  .cta .t{font-family:"Bricolage Grotesque","Hanken Grotesk",sans-serif; font-weight:700;
+    font-size:17px; line-height:1.12; letter-spacing:-.012em}
+  .cta .s{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--muted); line-height:1.4}
+  .cta.fleet{background:var(--cognac); border-color:var(--cognac); color:#fff}
+  .cta.fleet:hover{background:var(--cognac-d); border-color:var(--cognac-d)}
+  .cta.fleet .s{color:rgba(255,255,255,.88)}
+  .cta.primary{background:var(--cobalt); border-color:var(--cobalt); color:#fff}
+  .cta.primary:hover{background:var(--cobalt-d); border-color:var(--cobalt-d)}
+  .cta.primary .s{color:rgba(255,255,255,.85)}
+  .cta-call{display:flex; align-items:center; justify-content:center; gap:10px; max-width:620px;
+    padding:17px 20px; border-radius:8px; background:var(--ink); color:#fff;
+    font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:19px;
+    letter-spacing:-.012em; transition:background .15s, transform .12s ease}
+  .cta-call:hover{background:#000; transform:translateY(-2px)}
+  .cta-note{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.07em;
+    text-transform:uppercase; color:var(--muted); margin:12px 0 0; line-height:1.6}
+  .stickybar{display:none}
+  @media(max-width:880px){
+    .stickybar{display:grid; grid-template-columns:1.05fr .95fr; gap:8px; position:fixed;
+      left:0; right:0; bottom:0; z-index:300;
+      padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+      background:rgba(236,232,223,.96); backdrop-filter:blur(10px); border-top:1px solid var(--hair)}
+    .stickybar a{display:flex; align-items:center; justify-content:center; gap:7px; padding:13px 8px;
+      border-radius:7px; font-family:"Bricolage Grotesque",sans-serif; font-weight:700; font-size:15px}
+    .sb-call{background:var(--cognac); color:#fff}
+    .sb-book{background:var(--cobalt); color:#fff}
+    body{padding-bottom:76px}
+    .hero{padding:18px 0 26px}
+    h1.h-xl{font-size:clamp(30px,7.8vw,44px)}
+    .lead{font-size:16.5px; line-height:1.5; margin:14px 0 0}
+    .cta-grid{margin-top:18px}
+  }
+  @media(max-width:420px){
+    .cta{min-height:82px; padding:13px 14px}
+    .cta .t{font-size:15.5px}
+    .cta .s{font-size:9.5px; letter-spacing:.03em}
+    .cta-call{font-size:17.5px; padding:16px}
+  }
 </style>
 </head>
 <body id="top">
@@ -182,11 +227,27 @@
   <div class="wrap">
     <div class="tag mono">&mdash; Fleet Truck Repair &middot; Oxnard, CA</div>
     <h1 class="h-xl">Fleet truck repair at fleet rates.</h1>
-    <p class="lead">A truck in the shop is a crew standing still. Dieter's Motors keeps Ventura County work trucks moving with preventive maintenance, real diesel diagnostics, emissions repair and HD I/M Clean Truck Check inspections &mdash; all under one roof in Oxnard, at <strong>discounted fleet rates</strong>.</p>
-    <div class="ctas">
-      <a class="btn btn-cobalt" href="tel:18054851575">Call (805) 485-1575 <span class="arr">&rarr;</span></a>
-      <a class="btn btn-line" href="/schedule-service.html">Book service online</a>
+    <p class="lead">A truck in the shop is a crew standing still. Preventive maintenance, real diesel diagnostics, emissions repair and HD I/M Clean Truck Check &mdash; all under one roof in Oxnard, at <strong>discounted fleet rates</strong>.</p>
+    <div class="cta-grid">
+      <a class="cta fleet" data-cta="fleet_call_joel" href="tel:18054851575">
+        <span class="t">Fleet Truck Rates</span>
+        <span class="s">Call &amp; ask for Joel</span>
+      </a>
+      <a class="cta primary" data-cta="book_service" href="/schedule-service.html">
+        <span class="t">Book Fleet Service</span>
+        <span class="s">Diesel diagnostics &amp; PM</span>
+      </a>
+      <a class="cta" data-cta="book_clean_truck_check" href="/schedule-service.html">
+        <span class="t">Book Clean Truck Check</span>
+        <span class="s">$99 &middot; CARB HD I/M</span>
+      </a>
+      <a class="cta" data-cta="book_smog" href="/schedule-service.html">
+        <span class="t">Book Smog Check</span>
+        <span class="s">$59 &middot; vans &amp; light trucks</span>
+      </a>
     </div>
+    <a class="cta-call" data-cta="call_hero" href="tel:18054851575">Call Now &middot; (805) 485-1575</a>
+    <p class="cta-note">Mon&ndash;Fri 8am&ndash;5pm &middot; 2681 Ventura Blvd, Oxnard &middot; Ask for Joel for fleet pricing</p>
     <div class="creds">
       <div class="c"><strong>1972</strong><span>Family-owned</span></div>
       <div class="c"><strong>ASE</strong><span>Certified techs</span></div>
@@ -202,7 +263,7 @@
       <h2>Discounted fleet rates &mdash; ask about a fleet account.</h2>
       <p>Businesses running two trucks or twenty get a reduced labor rate, priority scheduling and one point of contact who actually knows your equipment. Call and we'll set up an account and quote your rate before any work begins.</p>
     </div>
-    <a class="btn btn-paper" href="tel:18054851575">Set up a fleet account <span class="arr">&rarr;</span></a>
+    <a class="btn btn-paper" data-cta="fleet_call_joel_section" href="tel:18054851575">Call &amp; ask for Joel &mdash; set up a fleet account <span class="arr">&rarr;</span></a>
   </div>
 </section>
 
@@ -353,6 +414,22 @@
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<div class="stickybar">
+  <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Call &amp; ask for Joel</a>
+  <a class="sb-book" data-cta="book_sticky" href="/schedule-service.html">Book Service</a>
+</div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-cta]') : null;
+    if(!a) return;
+    var id = a.getAttribute('data-cta');
+    if(typeof gtag === 'function'){
+      gtag('event', id.indexOf('call') > -1 ? 'cta_call' : 'cta_book', {
+        cta_id: id, cta_location: 'fleet'
+      });
+    }
+  }, true);
+</script>
 </body>
 </html>
