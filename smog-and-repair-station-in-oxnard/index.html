@@ -28,7 +28,7 @@
   <meta property="og:description" content="Smog inspection station in Oxnard, CA. BOOK NOW 805-485-1575. 2681 Ventura Blvd, Oxnard, CA 93036." />
   <meta property="og:url" content="https://dietersmotors.com/smog-and-repair-station-in-oxnard" />
   <meta property="og:type" content="business.business" />
-  <meta property="og:image" content="https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg" />
+  <meta property="og:image" content="https://www.dietersmotors.com/images/shop-front.jpg" />
 
   <style>
     /* Matches your site’s color system + general styling approach */
@@ -173,7 +173,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url("https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg");
+      background-image: url("/images/shop-front.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -488,6 +488,73 @@
       .sticky-call { display: block; }
       body { padding-bottom: 80px; }
     }
+
+    /* ---------- conversion CTA block ---------- */
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      max-width: 620px;
+      margin: 0 0 0.75rem;
+    }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.2rem;
+      min-height: 84px;
+      padding: 0.8rem 0.95rem;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(15,23,42,0.74);
+      backdrop-filter: blur(3px);
+      color: #ffffff;
+      transition: transform 0.12s ease, background 0.15s, border-color 0.15s;
+    }
+    .cta:hover { transform: translateY(-2px); background: rgba(15,23,42,0.92); border-color: #ffffff; }
+    .cta .t { font-weight: 700; font-size: 1rem; line-height: 1.2; }
+    .cta .s { font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; color: #cbd5e1; line-height: 1.4; }
+    .cta.primary { background: #1d4ed8; border-color: #1d4ed8; }
+    .cta.primary .s { color: rgba(255,255,255,0.88); }
+    .cta.fleet { background: #a85a28; border-color: #a85a28; }
+    .cta.fleet .s { color: rgba(255,255,255,0.9); }
+    .cta-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 620px;
+      padding: 0.95rem 1rem;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: transform 0.12s ease;
+    }
+    .cta-call:hover { transform: translateY(-2px); }
+    .cta-note {
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #e5e7eb;
+      margin: 0.7rem 0 0.2rem;
+      text-shadow: 0 10px 24px rgba(15,23,42,0.9);
+    }
+    .sticky-call.two { display: none; }
+    @media (max-width: 900px) {
+      .sticky-call { left: 10px; right: 10px; bottom: 10px; }
+      .sticky-call.two { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 0.5rem; }
+      .sticky-call.two a { border-radius: 10px; padding: 0.85rem 0.5rem; font-size: 0.95rem; box-shadow: 0 12px 28px rgba(15,23,42,0.35); }
+      .sticky-call.two a.sb-book { background: #1d4ed8; box-shadow: 0 12px 28px rgba(29,78,216,0.4); }
+      .cta .t { font-size: 0.95rem; }
+      .cta { min-height: 80px; padding: 0.7rem 0.8rem; }
+      .cta .s { font-size: 0.64rem; }
+      .hero { min-height: 0; }
+      .hero-inner { padding-top: 1.35rem; padding-bottom: 1.35rem; }
+      .hero-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.82) 55%, rgba(15,23,42,0.76) 100%); }
+    }
   </style>
 
   <!-- LocalBusiness Schema -->
@@ -497,7 +564,7 @@
     "@type":"AutoRepair",
     "name":"DM Smog (Dieter’s Motors)",
     "url":"https://dietersmotors.com/smog-and-repair-station-in-oxnard",
-    "image":"https://dietersmotors.com/wp-content/uploads/2021/06/square-front-main-1600x640.jpg",
+    "image":"https://www.dietersmotors.com/images/shop-front.jpg",
     "telephone":"+1-805-485-1575",
     "priceRange":"$$",
     "address":{
@@ -577,10 +644,28 @@
             <div class="badge">Oxnard • Ventura County</div>
           </div>
 
-          <div class="hero-actions">
-            <a class="btn-primary" href="tel:1805-485-1575">BOOK NOW — (805) 485-1575</a>
-            <a class="btn-outline" href="#location">Get Directions</a>
+          <div class="cta-grid">
+            <a class="cta primary" data-cta="book_smog" href="/schedule-service.html">
+              <span class="t">Book Smog Check</span>
+              <span class="s">$59 &middot; cars, vans &amp; light trucks</span>
+            </a>
+            <a class="cta" data-cta="book_clean_truck_check" href="/schedule-service.html">
+              <span class="t">Book Clean Truck Check</span>
+              <span class="s">$99 &middot; CARB HD I/M diesel</span>
+            </a>
+            <a class="cta" data-cta="book_service" href="/schedule-service.html">
+              <span class="t">Book Smog Repair</span>
+              <span class="s">Failed? We repair &amp; retest</span>
+            </a>
+            <a class="cta fleet" data-cta="fleet_call_joel" href="tel:1805-485-1575">
+              <span class="t">Fleet Truck Rates</span>
+              <span class="s">Call &amp; ask for Joel</span>
+            </a>
           </div>
+
+          <a class="cta-call" data-cta="call_hero" href="tel:1805-485-1575">Call Now &middot; (805) 485-1575</a>
+
+          <p class="cta-note">Mon&ndash;Fri 8am&ndash;5pm &middot; Walk-ins welcome &middot; <a href="#location" style="color:#fff;">Get directions</a></p>
 
           <p style="font-size:0.85rem; color:#e5e7eb; text-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);">
             Address: <strong style="color:#fff;">2681 Ventura Blvd, Oxnard, CA 93036</strong>
@@ -734,12 +819,24 @@
   </div>
 
   <!-- Mobile sticky call -->
-  <div class="sticky-call" aria-label="Mobile call button">
-    <a href="tel:1805-485-1575">BOOK NOW — 805-485-1575</a>
+  <div class="sticky-call two" aria-label="Mobile call and booking buttons">
+    <a class="sb-call" data-cta="call_sticky" href="tel:1805-485-1575">Call Now</a>
+    <a class="sb-book" data-cta="book_sticky" href="/schedule-service.html">Book Online</a>
   </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener('click', function(e){
+      var a = e.target.closest ? e.target.closest('[data-cta]') : null;
+      if(!a) return;
+      var id = a.getAttribute('data-cta');
+      if(typeof gtag === 'function'){
+        gtag('event', id.indexOf('call') > -1 ? 'cta_call' : 'cta_book', {
+          cta_id: id, cta_location: 'smog_station'
+        });
+      }
+    }, true);
   </script>
 </body>
 </html>
