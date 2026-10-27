@@ -18,4 +18,4 @@ User-agent: DuckDuckBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://dietersmotors.com/sitemap.xml
+Sitemap: https://www.dietersmotors.com/sitemap.xml

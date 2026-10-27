@@ -1,0 +1,577 @@
+{
+ "$schema": "https://openapi.vercel.sh/vercel.json",
+ "redirects": [
+  {
+   "source": "/automotive-diagnostics.html",
+   "destination": "/car-diagnostics-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/automotive-diagnostics",
+   "destination": "/car-diagnostics-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/automotive-diagnostics/",
+   "destination": "/car-diagnostics-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/brake-repair-service.html",
+   "destination": "/brake-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/brake-repair-service",
+   "destination": "/brake-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/brake-repair-service/",
+   "destination": "/brake-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/oil-change-service.html",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/oil-change-service",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/oil-change-service/",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/auto-maintenance.html",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/auto-maintenance",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/auto-maintenance/",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/mercedes-benz-service-in-oxnard.html",
+   "destination": "/mercedes-benz-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/mercedes-benz-service-in-oxnard",
+   "destination": "/mercedes-benz-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/mercedes-benz-service-in-oxnard/",
+   "destination": "/mercedes-benz-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/bmw-service-in-oxnard.html",
+   "destination": "/bmw-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/bmw-service-in-oxnard",
+   "destination": "/bmw-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/bmw-service-in-oxnard/",
+   "destination": "/bmw-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/fleet-truck-repair-in-oxnard.html",
+   "destination": "/fleet-vehicle-service-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/fleet-truck-repair-in-oxnard",
+   "destination": "/fleet-vehicle-service-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/fleet-truck-repair-in-oxnard/",
+   "destination": "/fleet-vehicle-service-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/rv-repair-in-oxnard.html",
+   "destination": "/rv-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/rv-repair-in-oxnard",
+   "destination": "/rv-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/rv-repair-in-oxnard/",
+   "destination": "/rv-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-repair-station-in-oxnard.html",
+   "destination": "/smog-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-repair-station-in-oxnard",
+   "destination": "/smog-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-repair-station-in-oxnard/",
+   "destination": "/smog-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-repair-station-in-oxnard/index.html",
+   "destination": "/smog-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-clean-truck-check.html",
+   "destination": "/clean-truck-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-clean-truck-check",
+   "destination": "/clean-truck-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-and-clean-truck-check/",
+   "destination": "/clean-truck-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/services/",
+   "destination": "/services",
+   "statusCode": 301
+  },
+  {
+   "source": "/service-articles",
+   "destination": "/service-articles.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/service-articles/",
+   "destination": "/service-articles.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/inter-chiller-systems-installations",
+   "destination": "/interchiller-systems-installations.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/inter-chiller-systems-installations/",
+   "destination": "/interchiller-systems-installations.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/the-importance-of-servicing-your-european-car-on-time",
+   "destination": "/importance-of-servicing-your-european-car-on-time.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/the-importance-of-servicing-your-european-car-on-time/",
+   "destination": "/importance-of-servicing-your-european-car-on-time.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/how-to-choose-and-maintain-your-european-car",
+   "destination": "/how-to-choose-and-maintain-your-european-car.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/how-to-choose-and-maintain-your-european-car/",
+   "destination": "/how-to-choose-and-maintain-your-european-car.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable",
+   "destination": "/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable/",
+   "destination": "/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable.html",
+   "statusCode": 301
+  },
+  {
+   "source": "/index_old.html",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/xmlrpc.php",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/backup_wp_index.php",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/readme.html",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/license.txt",
+   "destination": "/",
+   "statusCode": 301
+  },
+  {
+   "source": "/car-ac-repair-oxnard.html",
+   "destination": "/car-ac-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-aire-acondicionado-auto-oxnard.html",
+   "destination": "/es/reparacion-aire-acondicionado-auto-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/bmw-repair-oxnard.html",
+   "destination": "/bmw-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-bmw-oxnard.html",
+   "destination": "/es/reparacion-bmw-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/brake-repair-oxnard.html",
+   "destination": "/brake-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-de-frenos-oxnard.html",
+   "destination": "/es/reparacion-de-frenos-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/clean-truck-check-oxnard.html",
+   "destination": "/clean-truck-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-inspeccion-clean-truck-check-oxnard.html",
+   "destination": "/es/inspeccion-clean-truck-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/car-diagnostics-oxnard.html",
+   "destination": "/car-diagnostics-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-diagnostico-automotriz-oxnard.html",
+   "destination": "/es/diagnostico-automotriz-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/diesel-truck-repair-oxnard.html",
+   "destination": "/diesel-truck-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-camiones-diesel-oxnard.html",
+   "destination": "/es/reparacion-camiones-diesel-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/auto-electrical-repair-oxnard.html",
+   "destination": "/auto-electrical-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-electrica-automotriz-oxnard.html",
+   "destination": "/es/reparacion-electrica-automotriz-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/engine-transmission-repair-oxnard.html",
+   "destination": "/engine-transmission-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-de-motor-transmision-oxnard.html",
+   "destination": "/es/reparacion-de-motor-transmision-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/european-auto-repair-oxnard.html",
+   "destination": "/european-auto-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-autos-europeos-oxnard.html",
+   "destination": "/es/reparacion-autos-europeos-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/fleet-vehicle-service-oxnard.html",
+   "destination": "/fleet-vehicle-service-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-servicio-de-flotillas-oxnard.html",
+   "destination": "/es/servicio-de-flotillas-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/oil-change-maintenance-oxnard.html",
+   "destination": "/oil-change-maintenance-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-cambio-de-aceite-mantenimiento-oxnard.html",
+   "destination": "/es/cambio-de-aceite-mantenimiento-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/mercedes-benz-repair-oxnard.html",
+   "destination": "/mercedes-benz-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-mercedes-benz-oxnard.html",
+   "destination": "/es/reparacion-mercedes-benz-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/porsche-repair-oxnard.html",
+   "destination": "/porsche-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-porsche-oxnard.html",
+   "destination": "/es/reparacion-porsche-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/rv-repair-oxnard.html",
+   "destination": "/rv-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-de-rv-oxnard.html",
+   "destination": "/es/reparacion-de-rv-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/services.html",
+   "destination": "/services",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-servicios.html",
+   "destination": "/es/servicios",
+   "statusCode": 301
+  },
+  {
+   "source": "/smog-check-oxnard.html",
+   "destination": "/smog-check-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-prueba-de-smog-oxnard.html",
+   "destination": "/es/prueba-de-smog-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/steering-suspension-repair-oxnard.html",
+   "destination": "/steering-suspension-repair-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-reparacion-de-suspension-direccion-oxnard.html",
+   "destination": "/es/reparacion-de-suspension-direccion-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/used-cars-oxnard.html",
+   "destination": "/used-cars-oxnard",
+   "statusCode": 301
+  },
+  {
+   "source": "/es-autos-usados-oxnard.html",
+   "destination": "/es/autos-usados-oxnard",
+   "statusCode": 301
+  }
+ ],
+ "rewrites": [
+  {
+   "source": "/car-ac-repair-oxnard",
+   "destination": "/car-ac-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-aire-acondicionado-auto-oxnard",
+   "destination": "/es-reparacion-aire-acondicionado-auto-oxnard.html"
+  },
+  {
+   "source": "/bmw-repair-oxnard",
+   "destination": "/bmw-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-bmw-oxnard",
+   "destination": "/es-reparacion-bmw-oxnard.html"
+  },
+  {
+   "source": "/brake-repair-oxnard",
+   "destination": "/brake-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-de-frenos-oxnard",
+   "destination": "/es-reparacion-de-frenos-oxnard.html"
+  },
+  {
+   "source": "/clean-truck-check-oxnard",
+   "destination": "/clean-truck-check-oxnard.html"
+  },
+  {
+   "source": "/es/inspeccion-clean-truck-check-oxnard",
+   "destination": "/es-inspeccion-clean-truck-check-oxnard.html"
+  },
+  {
+   "source": "/car-diagnostics-oxnard",
+   "destination": "/car-diagnostics-oxnard.html"
+  },
+  {
+   "source": "/es/diagnostico-automotriz-oxnard",
+   "destination": "/es-diagnostico-automotriz-oxnard.html"
+  },
+  {
+   "source": "/diesel-truck-repair-oxnard",
+   "destination": "/diesel-truck-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-camiones-diesel-oxnard",
+   "destination": "/es-reparacion-camiones-diesel-oxnard.html"
+  },
+  {
+   "source": "/auto-electrical-repair-oxnard",
+   "destination": "/auto-electrical-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-electrica-automotriz-oxnard",
+   "destination": "/es-reparacion-electrica-automotriz-oxnard.html"
+  },
+  {
+   "source": "/engine-transmission-repair-oxnard",
+   "destination": "/engine-transmission-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-de-motor-transmision-oxnard",
+   "destination": "/es-reparacion-de-motor-transmision-oxnard.html"
+  },
+  {
+   "source": "/european-auto-repair-oxnard",
+   "destination": "/european-auto-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-autos-europeos-oxnard",
+   "destination": "/es-reparacion-autos-europeos-oxnard.html"
+  },
+  {
+   "source": "/fleet-vehicle-service-oxnard",
+   "destination": "/fleet-vehicle-service-oxnard.html"
+  },
+  {
+   "source": "/es/servicio-de-flotillas-oxnard",
+   "destination": "/es-servicio-de-flotillas-oxnard.html"
+  },
+  {
+   "source": "/oil-change-maintenance-oxnard",
+   "destination": "/oil-change-maintenance-oxnard.html"
+  },
+  {
+   "source": "/es/cambio-de-aceite-mantenimiento-oxnard",
+   "destination": "/es-cambio-de-aceite-mantenimiento-oxnard.html"
+  },
+  {
+   "source": "/mercedes-benz-repair-oxnard",
+   "destination": "/mercedes-benz-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-mercedes-benz-oxnard",
+   "destination": "/es-reparacion-mercedes-benz-oxnard.html"
+  },
+  {
+   "source": "/porsche-repair-oxnard",
+   "destination": "/porsche-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-porsche-oxnard",
+   "destination": "/es-reparacion-porsche-oxnard.html"
+  },
+  {
+   "source": "/rv-repair-oxnard",
+   "destination": "/rv-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-de-rv-oxnard",
+   "destination": "/es-reparacion-de-rv-oxnard.html"
+  },
+  {
+   "source": "/services",
+   "destination": "/services.html"
+  },
+  {
+   "source": "/es/servicios",
+   "destination": "/es-servicios.html"
+  },
+  {
+   "source": "/smog-check-oxnard",
+   "destination": "/smog-check-oxnard.html"
+  },
+  {
+   "source": "/es/prueba-de-smog-oxnard",
+   "destination": "/es-prueba-de-smog-oxnard.html"
+  },
+  {
+   "source": "/steering-suspension-repair-oxnard",
+   "destination": "/steering-suspension-repair-oxnard.html"
+  },
+  {
+   "source": "/es/reparacion-de-suspension-direccion-oxnard",
+   "destination": "/es-reparacion-de-suspension-direccion-oxnard.html"
+  },
+  {
+   "source": "/used-cars-oxnard",
+   "destination": "/used-cars-oxnard.html"
+  },
+  {
+   "source": "/es/autos-usados-oxnard",
+   "destination": "/es-autos-usados-oxnard.html"
+  }
+ ],
+ "headers": [
+  {
+   "source": "/(.*)\\.(jpg|png|webp)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=2592000"
+    }
+   ]
+  }
+ ]
+}
