@@ -863,6 +863,16 @@
       .nav-phone { display: none; }
       .cta-grid { margin-top: 0.85rem; }
     }
+    .brand-link{display:flex;flex-shrink:0}
+    .brand-logo{max-width:none}
+    @media (max-width:520px){ .nav-inner{padding:.6rem .8rem} .brand-logo{height:30px} .nav-cta{padding-left:.8rem;padding-right:.8rem} }
+    .nav-links a{white-space:nowrap}
+    @media (max-width:1440px){ .nav-phone{display:none} .nav-links{gap:1rem} }
+    @media (max-width:1150px){
+      .nav-links{display:none} .nav-toggle{display:flex}
+      body.nav-open .nav-links{display:flex;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--border);padding:.75rem 1.25rem .9rem;flex-direction:column;gap:.4rem}
+    }
+    .footer-svc{max-width:1100px;margin:1rem auto 0;padding:1rem 1.25rem 0;border-top:1px solid rgba(0,0,0,.08);display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;justify-content:center;font-size:.85rem}
   </style>
 
   <!-- LocalBusiness Schema -->
@@ -871,7 +881,9 @@
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Dieter's Motors",
-    "url": "https://dietersmotors.com/",
+    "@id": "https://dietersmotors.com/",
+    "url": "https://www.dietersmotors.com/es/",
+    "inLanguage": "es",
     "image": "https://www.dietersmotors.com/images/shop-front.jpg",
     "telephone": "+1-805-485-1575",
     "priceRange": "$$",
@@ -905,7 +917,7 @@
     "sameAs": [
       "https://maps.google.com/?q=2681+Ventura+Blvd+Oxnard+CA+93036"
     ],
-    "description": "Taller de reparación independiente de BMW, Mercedes-Benz, Porsche, Mini y Volvo en Oxnard, CA. Negocio familiar desde 1972 con técnicos certificados ASE, servicio de traslado y autos de cortesía."
+    "description": "Taller mecánico familiar en Oxnard, CA desde 1972: autos, camiones, diésel, flotillas y RV de todas las marcas. Estación de smog ($59) y estación oficial CARB Clean Truck Check ($99). Especialistas en Mercedes-Benz, BMW y Porsche. Venta de autos usados en la misma dirección."
   }
   </script>
 </head>
@@ -916,16 +928,18 @@
       <div class="nav-inner" id="top">
         <div class="brand">
           <!-- Ajusta la ruta src al archivo real del logo en tu servidor -->
-          <img class="brand-logo" src="/images/dieters-logo.png" alt="Logo Dieter's Motors" />
+          <a class="brand-link" href="/es/" aria-label="Dieter's Motors inicio"><img class="brand-logo" src="/images/dieters-logo.png" alt="Logo Dieter's Motors" /></a>
         </div>
 
         <nav class="nav-links">
-          <a href="#hero">Inicio</a>
-          <a href="#services">Servicios mecánicos</a>
-          <a href="#articles">Artículos</a>
+          <a href="/es/servicios">Servicios</a>
+          <a href="/es/prueba-de-smog-oxnard">Smog y Clean Truck</a>
+          <a href="/es/servicio-de-flotillas-oxnard">Flotillas y Diésel</a>
+          <a href="/es/reparacion-autos-europeos-oxnard">Europeos</a>
+          <a href="/es/autos-usados-oxnard">Autos Usados</a>
           <a href="#reviews">Reseñas</a>
-          <a href="#location">Ubicación y horario</a>
           <a href="#contact">Contacto</a>
+          <a href="https://www.usedcarsoxnard.com/">Ventas</a>
         </nav>
 
         <div style="display:flex; align-items:center; gap:0.75rem;">
@@ -934,8 +948,7 @@
             <a href="tel:18054851575">(805) 485-1575</a>
           </div>
           <a class="nav-cta"
-             href="https://dietersmotors.com/schedule-service.html"
-             target="_blank" rel="noopener">
+             href="/schedule-service.html">
             Cita en línea
           </a>
 
@@ -977,15 +990,15 @@
           </div>
 
           <div class="cta-grid">
-            <a class="cta primary" data-cta="book_service" href="https://dietersmotors.com/schedule-service.html">
+            <a class="cta primary" data-cta="book_service" href="/schedule-service.html">
               <span class="t">Reservar Servicio</span>
               <span class="s">Cualquier marca &middot; presupuesto gratis</span>
             </a>
-            <a class="cta" data-cta="book_smog" href="https://dietersmotors.com/schedule-service.html">
+            <a class="cta" data-cta="book_smog" href="/schedule-service.html">
               <span class="t">Reservar Prueba de Smog</span>
               <span class="s">$59 &middot; autos, vans y camionetas</span>
             </a>
-            <a class="cta" data-cta="book_clean_truck_check" href="https://dietersmotors.com/schedule-service.html">
+            <a class="cta" data-cta="book_clean_truck_check" href="/schedule-service.html">
               <span class="t">Reservar Clean Truck Check</span>
               <span class="s">$99 &middot; estación oficial CARB HD I/M</span>
             </a>
@@ -1119,7 +1132,7 @@
               Por qué es importante mantener su Mercedes al día y cómo atendemos
               modelos C-Class, E-Class, G-Class y S-Class.
             </p>
-            <a class="read-link" href="/es/reparacion-mercedes-benz-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/reparacion-mercedes-benz-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1130,7 +1143,7 @@
               Información sobre mantenimiento y reparación de BMW para conductores en
               Oxnard, Camarillo y Ventura.
             </p>
-            <a class="read-link" href="/es/reparacion-bmw-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/reparacion-bmw-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1141,7 +1154,7 @@
               Por qué seguir los intervalos de servicio recomendados es clave para evitar
               reparaciones costosas más adelante.
             </p>
-            <a class="read-link" href="/es/cambio-de-aceite-mantenimiento-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/cambio-de-aceite-mantenimiento-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1152,7 +1165,7 @@
               Señales de desgaste en el sistema de frenos y cómo revisamos, servimos y
               reemplazamos componentes.
             </p>
-            <a class="read-link" href="/es/reparacion-de-frenos-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/reparacion-de-frenos-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1163,7 +1176,7 @@
               Cómo el equipo de diagnóstico moderno nos ayuda a encontrar luces de “check
               engine”, fallas eléctricas y problemas de manejo.
             </p>
-            <a class="read-link" href="/es/diagnostico-automotriz-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/diagnostico-automotriz-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1174,7 +1187,7 @@
               Intervalos recomendados y por qué un cambio de aceite correcto es tan
               importante para la vida del motor.
             </p>
-            <a class="read-link" href="/es/cambio-de-aceite-mantenimiento-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/cambio-de-aceite-mantenimiento-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1185,7 +1198,7 @@
               Cómo el mantenimiento puntual ayuda a proteger el valor, la confiabilidad y
               la seguridad de su BMW o Mercedes.
             </p>
-            <a class="read-link" href="/importance-of-servicing-your-european-car-on-time.html" target="_blank" rel="noopener">
+            <a class="read-link" href="/importance-of-servicing-your-european-car-on-time.html">
               Ver artículo
             </a>
           </article>
@@ -1196,7 +1209,7 @@
               Consejos para elegir un auto europeo adecuado y mantenerlo en buen estado
               a largo plazo.
             </p>
-            <a class="read-link" href="/how-to-choose-and-maintain-your-european-car.html" target="_blank" rel="noopener">
+            <a class="read-link" href="/how-to-choose-and-maintain-your-european-car.html">
               Ver artículo
             </a>
           </article>
@@ -1207,7 +1220,7 @@
               Cómo los interchillers ayudan a mantener los autos de alto desempeño más
               frescos y constantes en climas de calor.
             </p>
-            <a class="read-link" href="/interchiller-systems-installations.html" target="_blank" rel="noopener">
+            <a class="read-link" href="/interchiller-systems-installations.html">
               Ver artículo
             </a>
           </article>
@@ -1218,7 +1231,7 @@
               Información sobre nuestro centro de smog y reparaciones en Oxnard, incluyendo
               inspecciones Clean Truck (HD I/M).
             </p>
-            <a class="read-link" href="/es/prueba-de-smog-oxnard" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/prueba-de-smog-oxnard">
               Ver artículo
             </a>
           </article>
@@ -1229,7 +1242,7 @@
               Revise todas nuestras páginas de servicio y artículos técnicos en un solo
               lugar.
             </p>
-            <a class="read-link" href="/es/servicios" target="_blank" rel="noopener">
+            <a class="read-link" href="/es/servicios">
               Ver todos los servicios
             </a>
           </article>
@@ -1354,14 +1367,13 @@
     <!-- Contacto -->
     <section id="contact" class="contact-strip">
       
-      <iframe src="https://dietersmotors.com/schedule-service.html" width="100%" height="700" frameborder="0"></iframe>
+      <iframe title="Solicitar cita" src="https://app.shopmonkey.cloud/public/quote-request/6091b399878c3e0b6f3b9a7b" width="100%" height="700" frameborder="0"></iframe>
       
       <div class="contact-inner">
         <div>
-          <h2>¿Necesita servicio para su Mercedes, BMW o Porsche?</h2>
+          <h2>¿Necesita servicio para su auto, camión o RV?</h2>
           <p>
-            Llame hoy a Dieter’s Motors para reparación y mantenimiento de autos europeos
-            en Ventura County.
+            Llame hoy a Dieter’s Motors: reparación y mantenimiento de todas las marcas — autos, camiones, diésel, RV y europeos — en Ventura County.
           </p>
         </div>
         <div class="contact-actions">
@@ -1369,8 +1381,7 @@
             Llamar (805) 485-1575
           </a>
           <a class="btn-outline"
-             href="https://dietersmotors.com/schedule-service.html"
-             target="_blank" rel="noopener">
+             href="/schedule-service.html">
             Solicitar cotización
           </a>
         </div>
@@ -1381,22 +1392,21 @@
     <footer>
       <div class="footer-inner">
         <div>
-          © <span id="year"></span> Dieter’s Motors | Servicio BMW, Mercedes y Porsche en Oxnard CA.
-          Todos los derechos reservados.
+          © <span id="year"></span> Dieter’s Motors · 2681 Ventura Blvd, Oxnard, CA 93036 · (805) 485-1575 · Taller de autos, camiones, diésel y RV — todas las marcas.
         </div>
-        <div class="footer-links">
-          <a href="https://www.usedcarsoxnard.com/">Ventas</a>
+        <div class="footer-links"><a href="/schedule-service.html">Reservar</a><a href="/service-articles.html">Artículos</a><a href="https://www.usedcarsoxnard.com/">Ventas</a>
           <a href="https://www.usedcarsoxnard.com/inventory">Inventario de autos</a>
           <a href="#top">Volver arriba ↑</a>
-          <a href="/">English version</a>
+          <a hreflang="en" href="/">English version</a>
         </div>
       </div>
+      <nav class="footer-links footer-svc" aria-label="Servicios"><a href="/es/servicios">Servicios</a><a href="/es/diagnostico-automotriz-oxnard">Diagnóstico Automotriz</a><a href="/es/reparacion-de-frenos-oxnard">Reparación de Frenos</a><a href="/es/cambio-de-aceite-mantenimiento-oxnard">Cambio de Aceite y Mantenimiento</a><a href="/es/reparacion-de-motor-transmision-oxnard">Motor y Transmisión</a><a href="/es/reparacion-aire-acondicionado-auto-oxnard">Aire Acondicionado</a><a href="/es/reparacion-electrica-automotriz-oxnard">Reparación Eléctrica</a><a href="/es/reparacion-de-suspension-direccion-oxnard">Suspensión y Dirección</a><a href="/es/prueba-de-smog-oxnard">Prueba de Smog</a><a href="/es/inspeccion-clean-truck-check-oxnard">Clean Truck Check</a><a href="/es/reparacion-camiones-diesel-oxnard">Camiones Diésel</a><a href="/es/servicio-de-flotillas-oxnard">Flotillas</a><a href="/es/reparacion-de-rv-oxnard">Reparación de RV</a><a href="/es/reparacion-autos-europeos-oxnard">Autos Europeos</a><a href="/es/reparacion-mercedes-benz-oxnard">Reparación de Mercedes-Benz</a><a href="/es/reparacion-bmw-oxnard">Reparación de BMW</a><a href="/es/reparacion-porsche-oxnard">Reparación de Porsche</a><a href="/es/autos-usados-oxnard">Autos Usados</a></nav>
     </footer>
   </div>
 
   <div class="stickybar" aria-label="Botones de llamada y reserva">
     <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Llamar Ahora</a>
-    <a class="sb-book" data-cta="book_sticky" href="https://dietersmotors.com/schedule-service.html">Reservar</a>
+    <a class="sb-book" data-cta="book_sticky" href="/schedule-service.html">Reservar</a>
   </div>
 
   <script>
