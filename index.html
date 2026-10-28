@@ -32,13 +32,13 @@
 <meta name="ICBM" content="34.22291, -119.13801">
 <link rel="canonical" href="https://www.dietersmotors.com/">
 <link rel="alternate" hreflang="en-US" href="https://www.dietersmotors.com/">
-<link rel="alternate" hreflang="es-US" href="https://www.dietersmotors.com/es/">
+<link rel="alternate" hreflang="es-US" href="/es/">
 <link rel="alternate" hreflang="x-default" href="https://www.dietersmotors.com/">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Dieter's Motors | Auto, Truck, Fleet &amp; RV Repair in Oxnard, CA">
 <meta property="og:description" content="Ventura County's trusted mechanic for every make and model — cars, trucks, fleets and RVs. Smog check $59, CARB Clean Truck Check $99. European specialists too. Family-owned in Oxnard since 1972.">
 <meta property="og:url" content="https://www.dietersmotors.com/">
-<meta property="og:image" content="https://dietersmotors.com/images/dieters-mascot.jpg">
+<meta property="og:image" content="https://www.dietersmotors.com/images/dieters-mascot.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,14 +49,15 @@
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Dieter's Motors",
-  "image": "https://dietersmotors.com/images/dieters-team.jpg",
+  "image": "https://www.dietersmotors.com/images/dieters-team.jpg",
   "@id": "https://dietersmotors.com/",
-  "url": "https://dietersmotors.com/",
+  "url": "https://www.dietersmotors.com/",
   "telephone": "+1-805-485-1575",
   "priceRange": "$$",
   "address": {"@type":"PostalAddress","streetAddress":"2681 Ventura Blvd","addressLocality":"Oxnard","addressRegion":"CA","postalCode":"93036","addressCountry":"US"},
   "geo": {"@type":"GeoCoordinates","latitude":34.22291,"longitude":-119.13801},
-  "areaServed": ["Oxnard","Camarillo","Ventura","Ventura County"],
+  "areaServed": ["Oxnard","Camarillo","Ventura","Port Hueneme","El Rio","Saticoy","Santa Paula","Moorpark","Ventura County"],
+  "sameAs": ["https://www.usedcarsoxnard.com/"],
   "foundingDate": "1972",
   "slogan": "Precision. Performance. Personal Service.",
   "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"13:00"}],
@@ -369,6 +370,17 @@
   footer.site{background:var(--navy-2); color:var(--muted-d); padding:38px 0; font-family:"JetBrains Mono",monospace; font-size:12px; letter-spacing:.06em}
   footer.site .wrap{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; align-items:center; text-transform:uppercase}
   footer.site a{color:#c5cdd8} footer.site a:hover{color:#fff}
+
+  /* footer service directory (matches service pages) */
+  footer.site{padding:54px 0 30px; font-family:"Hanken Grotesk",system-ui,sans-serif; font-size:14.5px; letter-spacing:0}
+  footer.site .wrap{display:block; text-transform:none}
+  .fcols{display:grid; grid-template-columns:.8fr 1.6fr; gap:40px}
+  .fh{font-family:"JetBrains Mono",monospace; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:#fff; margin-bottom:12px}
+  footer.site p{margin:0 0 12px; line-height:1.7}
+  .flinks{display:grid; grid-template-columns:repeat(3,1fr); gap:8px 20px}
+  .fbot{margin-top:34px; padding-top:20px; border-top:1px solid var(--hair-w); font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase}
+  @media(max-width:880px){.fcols{grid-template-columns:1fr; gap:30px}.flinks{grid-template-columns:1fr 1fr}}
+  @media(max-width:420px){.flinks{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
@@ -381,27 +393,26 @@
     <a class="xsales" href="https://www.usedcarsoxnard.com/inventory">Inventory</a>
     <a href="tel:18054851575">📞 (805) 485-1575</a>
     <span class="lang active">EN</span>
-    <a class="lang" href="https://www.dietersmotors.com/es/">ES</a>
+    <a class="lang" href="/es/">ES</a>
   </div>
 </div>
 
 <header class="site">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Dieter's Motors home">
+    <a class="brand" href="/" aria-label="Dieter's Motors home">
       <img class="logo" src="images/dieters-logo.png" alt="Dieter's Motors" width="431" height="131">
     </a>
-    <nav class="menu" id="menu">
-      <a href="#services">Services</a>
-      <a href="#smog">Smog &amp; Diesel</a>
-      <a href="/fleet-vehicle-service-oxnard">Fleet &amp; RV</a>
-      <a href="#team">Meet the Pack</a>
-      <a href="#articles">Resources</a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="/services">Services</a>
+      <a href="/smog-check-oxnard">Smog &amp; Clean Truck</a>
+      <a href="/fleet-vehicle-service-oxnard">Fleet &amp; Diesel</a>
+      <a href="/european-auto-repair-oxnard">European</a>
+      <a href="/used-cars-oxnard">Used Cars</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
       <a class="menu-x" href="https://www.usedcarsoxnard.com/">Sales</a>
-      <a class="menu-x" href="https://www.usedcarsoxnard.com/inventory">Inventory</a>
     </nav>
-    <a class="btn btn-cobalt hdr-cta" href="https://dietersmotors.com/schedule-service.html">Book Online <span class="arr">→</span></a>
+    <a class="btn btn-cobalt hdr-cta" href="/schedule-service.html">Book Online <span class="arr">→</span></a>
     <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false">MENU</button>
   </div>
 </header>
@@ -421,15 +432,15 @@
       <div class="slug">Precision. Performance. <i>Personal Service.</i></div>
 
       <div class="cta-grid">
-        <a class="cta primary" data-cta="book_service" href="https://dietersmotors.com/schedule-service.html">
+        <a class="cta primary" data-cta="book_service" href="/schedule-service.html">
           <span class="t">Book Service Now</span>
           <span class="s">Any make · free estimate</span>
         </a>
-        <a class="cta" data-cta="book_smog" href="https://dietersmotors.com/schedule-service.html">
+        <a class="cta" data-cta="book_smog" href="/schedule-service.html">
           <span class="t">Book Smog Check</span>
           <span class="s">$59 · cars, vans &amp; light trucks</span>
         </a>
-        <a class="cta" data-cta="book_clean_truck_check" href="https://dietersmotors.com/schedule-service.html">
+        <a class="cta" data-cta="book_clean_truck_check" href="/schedule-service.html">
           <span class="t">Book Clean Truck Check</span>
           <span class="s">$99 · official CARB HD I/M station</span>
         </a>
@@ -512,8 +523,8 @@
       <p>We're a smog and repair station in Oxnard handling regular smog checks and California HD I/M Clean Truck Check inspections for medium- and heavy-duty diesel trucks. Landscapers, plumbers, contractors and delivery fleets — get inspected and back on the road fast.</p>
     </div>
     <div class="acts">
-      <a class="btn btn-paper" data-cta="book_smog_section" href="https://dietersmotors.com/schedule-service.html">Book smog check — $59 <span class="arr">→</span></a>
-      <a class="btn btn-paper" data-cta="book_ctc_section" href="https://dietersmotors.com/schedule-service.html">Book Clean Truck Check — $99 <span class="arr">→</span></a>
+      <a class="btn btn-paper" data-cta="book_smog_section" href="/schedule-service.html">Book smog check — $59 <span class="arr">→</span></a>
+      <a class="btn btn-paper" data-cta="book_ctc_section" href="/schedule-service.html">Book Clean Truck Check — $99 <span class="arr">→</span></a>
       <a class="btn btn-line-w" data-cta="fleet_call_joel_section" href="tel:18054851575">Fleet rates — call &amp; ask for Joel</a>
       <a class="btn btn-line-w" href="/smog-check-oxnard">Smog &amp; Repair Station</a>
       <a class="btn btn-line-w" href="/clean-truck-check-oxnard">Clean Truck Check info</a>
@@ -583,22 +594,22 @@
         <span class="dsc">Recommended oil service intervals for European vehicles and why a proper oil change matters.</span>
         <span class="cat">Maintenance</span>
       </a>
-      <a class="row" href="https://dietersmotors.com/importance-of-servicing-your-european-car-on-time.html">
+      <a class="row" href="/importance-of-servicing-your-european-car-on-time.html">
         <span class="num">08</span><span class="ttl">Importance of Servicing Your European Car On Time</span>
         <span class="dsc">How on-time service protects resale value, reliability and safety for your BMW or Mercedes.</span>
         <span class="cat">Maintenance</span>
       </a>
-      <a class="row" href="https://dietersmotors.com/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable.html">
+      <a class="row" href="/how-to-keep-your-bmw-or-mercedes-benz-safe-and-reliable.html">
         <span class="num">09</span><span class="ttl">How to Keep Your BMW or Mercedes-Benz Safe and Reliable</span>
         <span class="dsc">Practical maintenance tips to help avoid unexpected breakdowns and costly repairs.</span>
         <span class="cat">Tips</span>
       </a>
-      <a class="row" href="https://dietersmotors.com/how-to-choose-and-maintain-your-european-car.html">
+      <a class="row" href="/how-to-choose-and-maintain-your-european-car.html">
         <span class="num">10</span><span class="ttl">How to Choose and Maintain Your European Car</span>
         <span class="dsc">Guidance on picking the right European car and caring for it over the long term.</span>
         <span class="cat">Tips</span>
       </a>
-      <a class="row" href="https://dietersmotors.com/interchiller-systems-installations.html">
+      <a class="row" href="/interchiller-systems-installations.html">
         <span class="num">11</span><span class="ttl">Interchiller Systems Installations</span>
         <span class="dsc">How interchillers keep performance cars cool, improve intake temps and protect power in heat.</span>
         <span class="cat">Performance</span>
@@ -681,7 +692,7 @@
         <li class=""><span class="d">Saturday</span><span class="t">9:00 AM – 1:00 PM</span></li>
         <li class="closed"><span class="d">Sunday</span><span class="t">Closed</span></li>
       </ul>
-      <a class="btn btn-ink" style="margin-top:22px" href="https://dietersmotors.com/schedule-service.html">Schedule an appointment <span class="arr">→</span></a>
+      <a class="btn btn-ink" style="margin-top:22px" href="/schedule-service.html">Schedule an appointment <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -691,23 +702,23 @@
   <div class="wrap">
     <h2>Bring it to the <span class="mk lit">big dog</span>.</h2>
     <div class="ctas">
-      <a class="btn btn-cobalt" href="https://dietersmotors.com/schedule-service.html">Book service online <span class="arr">→</span></a>
+      <a class="btn btn-cobalt" href="/schedule-service.html">Book service online <span class="arr">→</span></a>
       <a class="btn btn-line-w" href="tel:18054851575">Call (805) 485-1575</a>
     </div>
   </div>
 </section>
 
-<footer class="site">
-  <div class="wrap">
-    <div>© <span id="yr"></span> Dieter's Motors · 2681 Ventura Blvd, Oxnard CA · Precision. Performance. Personal Service.</div>
-    <div><a href="https://www.usedcarsoxnard.com/">Sales</a> &nbsp; · &nbsp; <a href="https://www.usedcarsoxnard.com/inventory">Used Car Inventory</a> &nbsp; · &nbsp; <a href="#top">Back to top ↑</a> &nbsp; · &nbsp; <a href="https://www.dietersmotors.com/es/">Versión en español</a></div>
-  </div>
-</footer>
+<footer class="site"><div class="wrap">
+<div class="fcols"><div><div class="fh">Dieter's Motors</div><p>2681 Ventura Blvd, Oxnard, CA 93036<br><a href="tel:18054851575">(805) 485-1575</a><br>Mon–Fri 8–5 · Sat 9–1</p>
+<p><a href="/schedule-service.html">Book Online</a> · <a href="/service-articles.html">Articles</a> · <a href="https://www.usedcarsoxnard.com/">Sales</a> · <a href="https://www.usedcarsoxnard.com/inventory">Used Car Inventory</a> · <a hreflang="es" href="/es/">Versión en español</a> · <a href="#top">Back to top ↑</a></p></div>
+<div><div class="fh">Services</div><div class="flinks"><a href="/services">Services</a><a href="/car-diagnostics-oxnard">Car Diagnostics</a><a href="/brake-repair-oxnard">Brake Repair</a><a href="/oil-change-maintenance-oxnard">Oil Change &amp; Maintenance</a><a href="/engine-transmission-repair-oxnard">Engine &amp; Transmission</a><a href="/car-ac-repair-oxnard">Car A/C Repair</a><a href="/auto-electrical-repair-oxnard">Electrical Repair</a><a href="/steering-suspension-repair-oxnard">Steering &amp; Suspension</a><a href="/smog-check-oxnard">Smog Check</a><a href="/clean-truck-check-oxnard">Clean Truck Check</a><a href="/diesel-truck-repair-oxnard">Diesel Truck Repair</a><a href="/fleet-vehicle-service-oxnard">Fleet Service</a><a href="/rv-repair-oxnard">RV Repair</a><a href="/european-auto-repair-oxnard">European Auto Repair</a><a href="/mercedes-benz-repair-oxnard">Mercedes-Benz Repair</a><a href="/bmw-repair-oxnard">BMW Repair</a><a href="/porsche-repair-oxnard">Porsche Repair</a><a href="/used-cars-oxnard">Used Cars</a></div></div></div>
+<div class="fbot">© <span id="yr"></span> Dieter's Motors · Precision. Performance. Personal Service.</div>
+</div></footer>
 
 <!-- STICKY MOBILE ACTION BAR -->
 <div class="stickybar">
   <a class="sb-call" data-cta="call_sticky" href="tel:18054851575">Call Now</a>
-  <a class="sb-book" data-cta="book_sticky" href="https://dietersmotors.com/schedule-service.html">Book Service</a>
+  <a class="sb-book" data-cta="book_sticky" href="/schedule-service.html">Book Service</a>
 </div>
 
 <script>
