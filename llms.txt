@@ -64,3 +64,8 @@
 - [How to choose and maintain your European car](https://www.dietersmotors.com/how-to-choose-and-maintain-your-european-car.html)
 - [Interchiller installations](https://www.dietersmotors.com/interchiller-systems-installations.html): A/C-chilled intercooler systems for turbocharged and supercharged performance vehicles.
 - [Schedule service](https://www.dietersmotors.com/schedule-service.html): Online appointment request for repair, smog check or Clean Truck Check.
+
+## Legal
+
+- [Privacy Policy](https://www.dietersmotors.com/privacy-policy): How Dieter's Motors (Joel DM Inc.) collects, uses and protects information from the website, phone calls and texts; California (CCPA) privacy rights.
+- [Terms and Conditions](https://www.dietersmotors.com/terms-and-conditions): Website terms and service terms — written estimates and authorization, payment, pickup and storage, warranty, smog and Clean Truck Check testing.

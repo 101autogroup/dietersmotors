@@ -415,6 +415,56 @@
    "source": "/es-autos-usados-oxnard.html",
    "destination": "/es/autos-usados-oxnard",
    "statusCode": 301
+  },
+  {
+   "source": "/privacy-policy.html",
+   "destination": "/privacy-policy",
+   "statusCode": 301
+  },
+  {
+   "source": "/privacy-policy/",
+   "destination": "/privacy-policy",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms-and-conditions.html",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms-and-conditions/",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/privacy",
+   "destination": "/privacy-policy",
+   "statusCode": 301
+  },
+  {
+   "source": "/privacy/",
+   "destination": "/privacy-policy",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms/",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms-of-service",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
+  },
+  {
+   "source": "/terms-of-use",
+   "destination": "/terms-and-conditions",
+   "statusCode": 301
   }
  ],
  "rewrites": [
@@ -561,6 +611,14 @@
   {
    "source": "/es/autos-usados-oxnard",
    "destination": "/es-autos-usados-oxnard.html"
+  },
+  {
+   "source": "/privacy-policy",
+   "destination": "/privacy-policy.html"
+  },
+  {
+   "source": "/terms-and-conditions",
+   "destination": "/terms-and-conditions.html"
   }
  ],
  "headers": [
